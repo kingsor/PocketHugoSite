@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "pocket-hugo",
+    "title": "Pocket Hugo",
+    "description": "A browser-first writing and publishing workflow for Hugo.",
+    "date": "2026-03-01T10:00:00+08:00",
+    "tags": ["Pocket Hugo", "Publishing", "Workflow"],
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/h2dcc/pocket-hugo"
+      },
+      {
+        "title": "Homepage",
+        "url": "https://pockethugo.cc/"
+      }
+    ],
+    "content": "{{< note type=\"info\" title=\"Project focus\" >}}\nPocket Hugo is a browser-first writing and publishing tool for Hugo. It tries to bring drafting, organizing, image handling, and publishing into a lighter workflow that feels closer to actual writing.\n{{< /note >}}\n\n{{< badge \"Browser-first\" >}} {{< badge text=\"Writing workflow\" type=\"info\" >}} {{< badge text=\"Hugo\" type=\"info\" >}}\n\n{{< button href=\"https://github.com/h2dcc/pocket-hugo\" label=\"View on GitHub\" >}}\n{{< button href=\"https://pockethugo.cc/\" label=\"Open Homepage\" style=\"ghost\" >}}\n\n## What this project is trying to solve\n\nPocket Hugo is less about building one more editor and more about reducing friction across the whole writing flow. The goal is to make Hugo feel closer to \"open the browser and start writing\" instead of depending on a heavy local setup and a scattered publishing process.\n\n## Best fit\n\n{{< columns >}}\n{{< column >}}\n### Better for\n\n- writers who want to keep Hugo but simplify the workflow\n- people who need to manage drafts, assets, and publishing together\n- publishing setups that benefit from staying lightweight\n{{< /column >}}\n{{< column >}}\n### Not mainly about\n\n- full CMS dashboards\n- complex team collaboration systems\n- highly coupled editing platforms\n{{< /column >}}\n{{< /columns >}}\n\n## Project rhythm\n\n{{< timeline >}}\n{{< timeline-item date=\"Step 1\" title=\"Write and organize\" >}}Work directly with Hugo-style content, drafts, and related assets.{{< /timeline-item >}}\n{{< timeline-item date=\"Step 2\" title=\"Handle images and publishing\" >}}Bring image processing and publishing into a smoother browser workflow.{{< /timeline-item >}}\n{{< timeline-item date=\"Step 3\" title=\"Maintain for the long run\" >}}Keep personal publishing sustainable without making it heavier than necessary.{{< /timeline-item >}}\n{{< /timeline >}}\n\n## Why it fits this demo\n\nPocket Hugo is a good example for this theme because it represents the writing side of the same publishing stack. One project focuses on creating and shipping content, while the other focuses on presentation and reading."
+  },
+  {
+    "slug": "pocket-hugo-theme",
+    "title": "Pocket Hugo Theme",
+    "description": "A Hugo theme for multilingual writing, cover-driven presentation, and long-form reading.",
+    "date": "2026-03-02T10:00:00+08:00",
+    "tags": ["Theme", "Multilingual", "Reading"],
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/h2dcc/pocket-hugo-theme"
+      }
+    ],
+    "content": "{{< note type=\"tip\" title=\"Theme direction\" >}}\nPocket Hugo Theme is a Hugo theme designed for multilingual writing, long-form reading, and cover-driven presentation. Its priority is not feature overload, but rhythm, consistency, and maintainability over time.\n{{< /note >}}\n\n{{< badge \"Multilingual\" >}} {{< badge text=\"Long-form reading\" type=\"info\" >}} {{< badge text=\"Cover-driven\" type=\"info\" >}}\n\n{{< button href=\"https://github.com/h2dcc/pocket-hugo-theme\" label=\"View on GitHub\" >}}\n\n## What the theme cares about\n\nMany themes look fine when a site is small, but start to drift once the content grows: article pages and fixed pages feel unrelated, language switching becomes awkward, cover cards lose consistency, and mobile reading gets cramped. Pocket Hugo Theme tries to keep those details coherent.\n\n## Best fit\n\n{{< columns >}}\n{{< column >}}\n### Better for\n\n- personal blogs and long-term writing sites\n- sites with bilingual or multilingual content\n- writers who care about list pages, covers, and reading order\n{{< /column >}}\n{{< column >}}\n### Not chasing\n\n- dashboard-like component aesthetics\n- flashy interaction for its own sake\n- visual tricks that hurt reading comfort\n{{< /column >}}\n{{< /columns >}}\n\n## Theme rhythm\n\n{{< timeline >}}\n{{< timeline-item date=\"Layer 1\" title=\"Content structure\" >}}Keep homepage, articles, archives, taxonomies, and fixed pages speaking the same language.{{< /timeline-item >}}\n{{< timeline-item date=\"Layer 2\" title=\"Reading experience\" >}}Focus on covers, typography, language switching, and long-form pacing.{{< /timeline-item >}}\n{{< timeline-item date=\"Layer 3\" title=\"Long-term maintenance\" >}}Keep configuration and behavior clear enough that the site stays usable as it grows.{{< /timeline-item >}}\n{{< /timeline >}}\n\n## Why it fits this demo\n\nThis example shows the theme describing itself without turning into documentation-only copy. The page still reads like a project profile rather than a config reference."
+  }
+]

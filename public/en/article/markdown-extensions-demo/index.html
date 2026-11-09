@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-layout-mode="single" data-palette="black-gold-elegance"  style="--content-width:1080px;--image-brightness-light:1;--image-brightness-dark:0.85;--cover-image-border-width:1px;--content-image-border-width:1px;--title-card-border-width:1px;--cover-fallback-title-font-family:\"fix-punct\", \"confuse-punct\", system-ui, -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", sans-serif;--cover-fallback-title-font-weight:900;--cover-fallback-title-letter-spacing:-0.03em;">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Markdown Extensions Demo · The Neetpiq Lab
+</title>
+    <script>
+    (function () {
+        var key = 'StackColorScheme';
+        var paletteKey = 'PocketPalettePreset';
+        var media = window.matchMedia('(prefers-color-scheme: dark)');
+        var defaultTheme = "light";
+        var defaultPalette = "black-gold-elegance";
+        var validPalettes = ['golden-summer-fields', 'soft-pastel-shades', 'black-gold-elegance', 'fresh-greens', 'light-steel', 'deep-sea-blue', 'morandi-mist', 'monochrome-core'];
+        var stored = null;
+        var storedPalette = null;
+
+        try {
+            stored = localStorage.getItem(key);
+            storedPalette = localStorage.getItem(paletteKey);
+        } catch (e) {
+            stored = null;
+            storedPalette = null;
+        }
+
+        var resolved = stored === 'dark' || stored === 'light'
+            ? stored
+            : ((defaultTheme === 'dark' || defaultTheme === 'light')
+                ? defaultTheme
+                : (media.matches ? 'dark' : 'light'));
+        var resolvedPalette = validPalettes.indexOf(storedPalette) > -1
+            ? storedPalette
+            : (validPalettes.indexOf(defaultPalette) > -1 ? defaultPalette : 'golden-summer-fields');
+
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.dataset.scheme = resolved;
+        document.documentElement.dataset.palette = resolvedPalette;
+        document.documentElement.style.colorScheme = resolved;
+    })();
+</script>
+
+    
+    
+    
+    
+    
+        
+    
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <meta name="theme-color" content="#f4f6f8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1623" media="(prefers-color-scheme: dark)">
+    
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+<meta name="description" content="A focused demo for the optional Syntax, Mermaid, and KaTeX extensions in Pocket Hugo Theme.">
+<link rel="canonical" href="http://localhost:1313/en/article/markdown-extensions-demo/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="The Neetpiq Lab">
+<meta property="og:title" content="Markdown Extensions Demo · The Neetpiq Lab
+">
+<meta property="og:description" content="A focused demo for the optional Syntax, Mermaid, and KaTeX extensions in Pocket Hugo Theme.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/en/article/markdown-extensions-demo/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown Extensions Demo · The Neetpiq Lab
+">
+<meta name="twitter:description" content="A focused demo for the optional Syntax, Mermaid, and KaTeX extensions in Pocket Hugo Theme.">
+
+
+    <meta property="article:published_time" content="2026-02-01T09:00:00&#43;08:00">
+    <meta property="article:modified_time" content="2026-02-01T09:00:00&#43;08:00">
+    <meta property="article:section" content="Demo">
+    <meta property="article:tag" content="Markdown"><meta property="article:tag" content="Mermaid"><meta property="article:tag" content="KaTeX"><meta property="article:tag" content="Syntax Highlighting">
+
+
+
+    <link rel="alternate" hreflang="en" href="http://localhost:1313/en/article/markdown-extensions-demo/">
+
+
+    
+        <link rel="alternate" hreflang="x-default" href="http://localhost:1313/en/article/markdown-extensions-demo/">
+    
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "\"Markdown Extensions Demo\"",
+  "name": "\"Markdown Extensions Demo · The Neetpiq Lab\\r\\n\"",
+  "description": "\"A focused demo for the optional Syntax, Mermaid, and KaTeX extensions in Pocket Hugo Theme.\"",
+  "url": "\"http://localhost:1313/en/article/markdown-extensions-demo/\"",
+  "inLanguage": "\"en\"",
+  "datePublished": "\"2026-02-01T09:00:00+08:00\"",
+  "dateModified": "\"2026-02-01T09:00:00+08:00\"",
+  "publisher": {
+    "@type": "Organization",
+    "name": "\"The Neetpiq Lab\""
+  }
+}
+</script>
+
+    
+    
+    
+        
+        <link rel="stylesheet" href="/css/main.css">
+    
+    <link rel="stylesheet" href="/css/extensions/mermaid.css"><link rel="stylesheet" href="/css/extensions/katex.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    
+    
+</head>
+<body class="template-single">
+    <header class="site-header">
+    <div class="site-header__inner">
+        <div class="site-brand">
+            
+            
+                
+                    
+                
+            
+
+            
+                <a class="site-brand__avatar" href="/en/">
+                    <img src="/img/logo-default.png" alt="The Neetpiq Lab">
+                </a>
+            
+
+            <div class="site-brand__text">
+                <a class="site-brand__title" href="/en/">The Neetpiq Lab</a>
+                <p class="site-brand__subtitle">Space for experiments in the software world, between homelabs, devops and small projects with IoT devices and a touch of 3D printing when needed to give shape to ideas.</p>
+            </div>
+        </div>
+
+        <div class="site-header__nav">
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="main-nav__link" href="/en/">Home</a>
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/talks/" >Talks</a>
+                    
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/archives/" >Archives</a>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/links/" >Links</a>
+                    
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/guide/" >Guide</a>
+                    
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/resources/" >Resources</a>
+                    
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/about/" >About</a>
+                    
+                
+            </nav>
+
+            
+                <nav class="social-nav" aria-label="Social links">
+                    
+                        
+                        
+                        
+                        
+                            <a
+                                class="social-nav__link"
+                                href="https://github.com/h2dcc/pocket-hugo-theme"
+                                title="GitHub"
+                                target="_blank" rel="me noopener noreferrer"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                            </a>
+                        
+                    
+                        
+                        
+                        
+                        
+                            <a
+                                class="social-nav__link"
+                                href="https://www.facebook.com/"
+                                title="Facebook"
+                                target="_blank" rel="me noopener noreferrer"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+  <path d="M13.5 21v-7h2.3l.4-3h-2.7V9.2c0-.9.3-1.5 1.6-1.5H16V5.1c-.5-.1-1.4-.1-2.3-.1-2.3 0-3.8 1.4-3.8 4V11H7.5v3h2.4v7h3.6Z"/>
+</svg>
+
+                            </a>
+                        
+                    
+                        
+                        
+                        
+                        
+                            <a
+                                class="social-nav__link"
+                                href="https://twitter.com/"
+                                title="Twitter"
+                                target="_blank" rel="me noopener noreferrer"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+  <path d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.2L6.7 22H3.6l7.3-8.3L1.5 2h6.3l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.6 3.9H4.8L17.8 20Z"/>
+</svg>
+
+                            </a>
+                        
+                    
+                        
+                        
+                        
+                        
+                            <a
+                                class="social-nav__link"
+                                href="/index.xml"
+                                title="RSS"
+                                
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                            </a>
+                        
+                    
+                </nav>
+            
+        </div>
+
+        <div class="header-tools">
+            
+
+            
+
+            
+
+
+    
+    
+
+
+
+    
+    
+    
+    
+
+    
+        <div class="translation-toggle translation-toggle--header">
+            
+                
+                    
+                        <a
+                            class="translation-toggle__header-link header-tool header-tool--icon"
+                            href="/it/"
+                            title="Switch language: Italian"
+                            aria-label="Switch language: Italian"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                        </a>
+                    
+                
+            
+        </div>
+    
+
+
+
+            
+        </div>
+    </div>
+</header>
+
+
+    <div class="site-shell">
+        <main class="site-main">
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <article class="article-page">
+        <header class="article-page__header">
+            
+                
+                
+                
+                    <div class="article-page__cover">
+                        
+                            
+
+
+
+
+<div class="cover-fallback cover-fallback--single" data-cover-palette="morandi-mist" data-cover-tone="light">
+    <div class="cover-fallback__inner">
+        <p class="cover-fallback__title">Markdown Extensions Demo</p>
+    </div>
+</div>
+
+                        
+                    </div>
+                
+            
+
+            <div class="article-page__meta">
+                
+                    <h1>Markdown Extensions Demo</h1>
+                
+                <div class="meta-line">
+                    <span>2026-02-01</span>
+                    
+                        <span class="meta-categories">
+                            
+                                
+                                <a href="/en/categories/demo/">Demo</a>
+                            
+                        </span>
+                    
+                    <span>2 min read</span>
+                    
+                        <span>236 words</span>
+                    
+                    
+
+
+
+
+
+                </div>
+                
+                    
+                        <blockquote class="article-page__description">
+                            <span class="article-page__description-label">Description</span>
+                            A focused demo for the optional Syntax, Mermaid, and KaTeX extensions in Pocket Hugo Theme.
+                        </blockquote>
+                    
+                
+            </div>
+        </header>
+
+        
+            <div class="article-page__toc-mobile">
+                
+<section class="widget-simple widget-simple--toc">
+    <h2 class="widget-simple__title">Contents</h2>
+    <div class="toc-widget"><nav id="TableOfContents">
+  <ol>
+    <li><a href="#syntax-highlighting">Syntax Highlighting</a></li>
+    <li><a href="#mermaid">Mermaid</a></li>
+    <li><a href="#katex">KaTeX</a></li>
+    <li><a href="#mixed-content">Mixed Content</a></li>
+  </ol>
+</nav></div>
+</section>
+
+            </div>
+        
+
+        <div class="article-page__content">
+            <div class="article-content" style="--article-content-image-mobile-max-height: 160px; --article-content-image-tablet-max-height: 250px; --article-content-image-desktop-max-height: 350px; --article-content-image-fullwidth-fit: cover;">
+                <p>This post is a dedicated demo for the optional Markdown-related extensions in <code>pocket-hugo-theme</code>.</p>
+<p>To see every block below rendered as intended, enable the related switches in <code>hugo.toml</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">extensions</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">mermaid</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">katex</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div><p>Syntax highlighting is included by default. For Mermaid and KaTeX, add a page-level list in the front matter of the article that actually needs them:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">extensions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">mermaid</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">katex</span></span></span></code></pre></div><h2 id="syntax-highlighting">Syntax Highlighting</h2>
+<p>Pocket Hugo includes a small syntax color layer by default, so normal highlighted code blocks do not need any extra page-level switch.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="s">&#34;fmt&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="kd">func</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nx">theme</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&#34;pocket-hugo-theme&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nx">enabled</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="p">[]</span><span class="kt">string</span><span class="p">{</span><span class="s">&#34;syntax&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;mermaid&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;katex&#34;</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">theme</span><span class="p">,</span><span class="w"> </span><span class="nx">enabled</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">article-content</span> <span class="nt">pre</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">overflow-x</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div><h2 id="mermaid">Mermaid</h2>
+<p>When the <code>mermaid</code> extension is enabled, fenced code blocks with the <code>mermaid</code> language are converted into diagrams on the page.</p>
+<div class="highlight">
+    <pre tabindex="0" class="chroma"><code class="language-mermaid" data-lang="mermaid">flowchart LR
+    A[Write Markdown] --> B[Enable extension]
+    B --> C[Build site]
+    C --> D[See rendered diagram]</code></pre>
+</div><h2 id="katex">KaTeX</h2>
+<p>When the <code>katex</code> extension is enabled, inline and block math can render directly inside the article.</p>
+<p>Inline math: $E = mc^2$</p>
+<p>Block math:</p>
+<p>$$
+\int_{0}^{1} x^2 , dx = \frac{1}{3}
+$$</p>
+<p>$$
+f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}
+\exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
+$$</p>
+<h2 id="mixed-content">Mixed Content</h2>
+<p>The main goal of this post is to show that code, diagrams, and formulas can live together in one normal article layout without breaking the theme rhythm.</p>
+<ol>
+<li>Syntax highlighting improves token contrast.</li>
+<li>Mermaid turns fenced blocks into SVG diagrams.</li>
+<li>KaTeX renders math without changing your writing flow too much.</li>
+</ol>
+
+            </div>
+        </div>
+
+        <div class="article-backlinks-inline">
+            
+        </div>
+            <div class="article-related-inline">
+                
+
+<section class="widget-simple">
+    <h2 class="widget-simple__title">Related Posts</h2>
+    <div class="widget-simple__list">
+        
+            <a class="widget-simple__row widget-simple__row--related" href="/en/article/markdown-demo/">
+                <span>Markdown Rendering Showcase</span>
+            </a>
+        
+            <a class="widget-simple__row widget-simple__row--related" href="/en/article/title-card-guide/">
+                <span>Title Card Guide</span>
+            </a>
+        
+            <a class="widget-simple__row widget-simple__row--related" href="/en/article/comments-demo/">
+                <span>Comments Demo</span>
+            </a>
+        
+    </div>
+</section>
+
+            </div>
+        
+
+        
+
+
+
+    </article>
+
+        </main>
+
+        
+    
+    <aside class="sidebar-right">
+    
+
+    
+        
+        
+            
+<section class="widget-simple widget-simple--toc">
+    <h2 class="widget-simple__title">Contents</h2>
+    <div class="toc-widget"><nav id="TableOfContents">
+  <ol>
+    <li><a href="#syntax-highlighting">Syntax Highlighting</a></li>
+    <li><a href="#mermaid">Mermaid</a></li>
+    <li><a href="#katex">KaTeX</a></li>
+    <li><a href="#mixed-content">Mixed Content</a></li>
+  </ol>
+</nav></div>
+</section>
+
+        
+    
+
+    
+        
+        
+
+<section class="widget-simple">
+    <h2 class="widget-simple__title">Related Posts</h2>
+    <div class="widget-simple__list">
+        
+            <a class="widget-simple__row widget-simple__row--related" href="/en/article/markdown-demo/">
+                <span>Markdown Rendering Showcase</span>
+            </a>
+        
+            <a class="widget-simple__row widget-simple__row--related" href="/en/article/title-card-guide/">
+                <span>Title Card Guide</span>
+            </a>
+        
+            <a class="widget-simple__row widget-simple__row--related" href="/en/article/comments-demo/">
+                <span>Comments Demo</span>
+            </a>
+        
+    </div>
+</section>
+
+    
+
+    
+        
+        
+    
+</aside>
+
+    </div>
+
+    
+        <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">↑</button>
+    
+
+    <footer class="site-footer">
+    <p>
+        &copy; 2026 The Neetpiq Lab
+         - MIT licensed demo content
+    </p>
+</footer>
+
+    
+        <script src="/js/main.js" defer></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (!window.renderMathInElement) return;
+            document.querySelectorAll('.article-content, .article-page__description').forEach(function (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: '$$', right: '$$', display: true },
+                        { left: '\\[', right: '\\]', display: true },
+                        { left: '$', right: '$', display: false },
+                        { left: '\\(', right: '\\)', display: false }
+                    ],
+                    throwOnError: false
+                });
+            });
+        });
+    </script><script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (!window.mermaid) return;
+            var nodes = [];
+            document.querySelectorAll('code.language-mermaid, code[data-lang="mermaid"]').forEach(function (code) {
+                var pre = code.closest('pre');
+                var wrapper = code.closest('.highlight') || pre;
+                if (!wrapper || !wrapper.parentNode) return;
+
+                var container = document.createElement('div');
+                container.className = 'mermaid';
+                container.textContent = (code.textContent || '').trim();
+                wrapper.parentNode.replaceChild(container, wrapper);
+                nodes.push(container);
+            });
+
+            if (!nodes.length) return;
+            mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose'
+            });
+            mermaid.run({ nodes: nodes });
+        });
+    </script>
+    
+</body>
+</html>

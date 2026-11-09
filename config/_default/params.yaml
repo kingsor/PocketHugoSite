@@ -1,0 +1,236 @@
+# Theme options.
+featuredImageField: "image"
+favicon: "/img/favicon-32x32.png"
+appleTouchIcon: "/img/apple-touch-icon.png"
+# Summary length for homepage and list cards.
+# Set to 0 to disable truncation and show the full summary instead.
+summaryLength: 0
+articleWords: true
+backToTop: true
+# Experimental: browser View Transitions API. Disabled by default because
+# some browsers may still flash briefly during navigation.
+viewTransitions: false
+
+extensions:
+  # Mermaid is disabled by default because it also loads extra JavaScript.
+  # To use it on one page, first turn it on here, then add `extensions = ["mermaid"]`
+  # to that page's front matter.
+  mermaid: true
+  # KaTeX is disabled by default because it also loads extra JavaScript.
+  # To use it on one page, first turn it on here, then add `extensions = ["katex"]`
+  # to that page's front matter.
+  katex: true
+
+search:
+  provider: "local"
+  fullText: false
+
+seo:
+  # Optional tagline used by title patterns.
+  tagline: "A cover-driven theme for long-term personal writing"
+  # Homepage meta description used by search engines and social previews.
+  homeDescription: "Pocket Hugo Theme is a multilingual, cover-driven Hugo theme for long-form writing, talks, links, and calm personal publishing."
+  # Maximum description length for SEO meta output.
+  descriptionLength: 180
+  # Separator string used by title patterns.
+  separator: " · "
+  title:
+    # Available placeholders:
+    # [site_name] [tagline] [separator]
+    # [post_title] [page_title] [group_title] [archive_title]
+    home: "[site_name]"
+    post: "[post_title][separator][site_name]"
+    page: "[page_title][separator][site_name]"
+    group: "[group_title][separator][site_name]"
+    archive: "[archive_title][separator][site_name]"
+
+projects:
+  remoteDemo:
+    # Experimental example for Content Adapters.
+    # Disabled by default so the demo remains stable offline.
+    enabled: false
+    source: "github-issues"
+    url: "https://api.github.com/repos/gohugoio/hugo/issues?per_page=6&state=open"
+
+footer:
+  since: 2026
+
+dateFormat:
+  published: "2006-01-02"
+  lastUpdated: "2006-01-02"
+
+sidebar:
+  subtitle: "A cover-driven theme for long-term personal writing"
+  avatar:
+    enabled: true
+    local: true
+    src: "img/logo-default.png"
+  qr:
+    enabled: false
+    # image: "img/your-qr.png"
+    # alt: "Scan me"
+    # width: 110
+    # height: 110
+
+article:
+  backlinks: true
+  backlinksLimit: 5
+  # Whether article lists render excerpts below titles.
+  showListSummary: true
+  # Whether generated gradient cards on homepage, taxonomy, archive, and other lists show the outer title.
+  listTitle: true
+  # Whether single article/page headers render .Description below the title.
+  showPageDescription: true
+  toc: true
+  readingTime: true
+
+images:
+  cover:
+    # Whether homepage/list covers should use Hugo Fill cropping.
+    # Set to false to keep the original image instead of generating a cropped cover.
+    useFill: false
+    # Hugo Fill spec used for homepage and card covers.
+    cardFill: "640x300 Center q85"
+    # Hugo Fill spec used for taxonomy cards.
+    taxonomyFill: "640x300 Center q85"
+    # Variant used for og:image and twitter:image. Usually "card" or "single".
+    openGraphVariant: "card"
+    # Use a fallback cover when a post does not define one.
+    useDefault: true
+    # "image" uses default-cover, "gradient" renders a generated title card.
+    fallbackMode: "gradient"
+    # Whether social sharing should still fall back to default-cover when the page has no image.
+    openGraphUseDefault: true
+    # Local path or remote URL for the fallback cover image when fallbackMode = "image".
+    default: "/img/default-cover.webp"
+    titleFont:
+      # CSS font-family used by generated gradient title cards.
+      family: '"fix-punct", "confuse-punct", system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif'
+      # Optional typography tweaks for generated title cards.
+      weight: "900"
+      letterSpacing: "-0.03em"
+
+  content:
+    # Enable or disable max-height control for inline article images.
+    enableMaxHeight: true
+    # Use one unified height on all breakpoints when enabled.
+    limitHeight: false
+    # Shared height used when limitHeight is true.
+    unifiedMaxHeight: "320px"
+    # Per-breakpoint image height thresholds.
+    mobileMaxHeight: "160px"
+    tabletMaxHeight: "250px"
+    desktopMaxHeight: "350px"
+    # Object-fit used for full-width inline images.
+    fullWidthFit: "cover"
+
+  brightness:
+    # CSS brightness() value applied to images in light mode.
+    light: "1"
+    # CSS brightness() value applied to images in dark mode.
+    dark: "0.85"
+
+  borders:
+    # Whether homepage/list and single-page cover images render with a light border.
+    cover: true
+    # Whether inline article images render with a light border.
+    content: true
+    # Whether generated gradient title cards render with a light border.
+    titleCards: true
+
+  pipeline:
+    responsive: true
+    format: "webp"
+    quality: 85
+    coverWidths: [480, 720, 960, 1280]
+    contentWidths: [640, 960, 1400]
+
+languageSwitcher:
+  # With two site languages, use a direct switch icon; with more than two, use a dropdown list.
+  headerSelectThreshold: 2
+
+comments:
+  # Enable comments globally. The example site keeps Twikoo on so the demo can show a real comment area.
+  enabled: true
+  # Supported providers: "giscus", "twikoo", or "custom".
+  provider: "twikoo"
+
+  giscus:
+    # repo: "owner/repo"
+    # repoId: "..."
+    # category: "Announcements"
+    # categoryId: "..."
+    mapping: "pathname"
+    strict: "0"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "top"
+    theme: "preferred_color_scheme"
+    # lang: "en"
+    # jsUrl: "https://giscus.app/client.js"
+
+  twikoo:
+    # The example site uses a demo service here. For your own site, apply for and replace this with your own Twikoo service URL.
+    envId: "https://twikoo.fosu.ccc"
+    # region: ""
+    lang: "en-US"
+    # This path is fixed to "theme" only for the shared demo comments.
+    # If you deploy your own site, you can usually remove it and let Twikoo use each page path automatically.
+    path: "theme"
+    # jsUrl: "https://cdn.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.min.js"
+
+colorScheme:
+  # Show the light/dark mode switch in the header.
+  toggle: false
+  # Use "auto" to follow the system, or force "light" / "dark".
+  default: "light"
+  # Available presets:
+  # golden-summer-fields, soft-pastel-shades, black-gold-elegance,
+  # fresh-greens, light-steel, deep-sea-blue, morandi-mist, monochrome-core
+  preset: "black-gold-elegance"
+  # Show the palette preview picker in the header.
+  showPicker: false
+
+layout:
+  # double = 1320px wide list layout, single = 1080px wide list layout
+  listMode: "single"
+
+minMode:
+  enabled: false
+  default: false
+
+widgets:
+  homepage:
+    - { type: "search", params: { limit: 0 } }
+    - { type: "archives", params: { limit: 3 } }
+    - { type: "categories", params: { limit: 10 } }
+    - { type: "tag-cloud", params: { limit: 20 } }
+  static:
+    - { type: "search", params: { limit: 0 } }
+    - { type: "archives", params: { limit: 3 } }
+    - { type: "categories", params: { limit: 10 } }
+    - { type: "tag-cloud", params: { limit: 20 } }
+  page:
+    - { type: "toc" }
+  titleVisibility:
+    archives: false
+    backlinks: true
+    categories: false
+    related: true
+    search: false
+    tagCloud: true
+    toc: true
+
+social:
+  - name: "GitHub"
+    url: "https://github.com/h2dcc/pocket-hugo-theme"
+    icon: "brand-github"
+  - name: "Facebook"
+    url: "https://www.facebook.com/"
+    icon: "brand-facebook"
+  - name: "Twitter"
+    url: "https://twitter.com/"
+    icon: "brand-twitter"
+  - name: "RSS"
+    url: "/index.xml"
+    icon: "rss"

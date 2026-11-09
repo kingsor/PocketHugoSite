@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Config - The Neetpiq Lab</title>
+    <link>http://localhost:1313/en/categories/config/</link>
+    <description>Config</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Nov 2026 16:44:54 &#43;0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/config/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>i18n MultiLanguage Configuration Reference</title>
+      <link>http://localhost:1313/en/article/i18n-multilanguage-config/</link>
+      <pubDate>Thu, 05 Mar 2026 01:00:00 &#43;0000</pubDate>
+      <guid>http://localhost:1313/en/article/i18n-multilanguage-config/</guid>
+      <description>A field-by-field guide to the i18n MultiLanguage Hugo configuration used by Pocket Hugo Theme.</description>
+      <content:encoded><![CDATA[<p>The Pocket Hugo theme supports multilingual usage. Two languages ​​are enabled by default; if you do not require them, you can simply remove the unwanted languages ​​within the <code>hugo.toml</code> file.</p>
+<h2 id="set-preferred-language">Set Preferred Language</h2>
+<p>Pocket Hugo theme natively supports over 10 language settings, including English, Chinese, Japanese, French, Spanish, Russian, German, Korean, Portuguese, Italian, and more. You can specify a preferred language in <code>hugo.toml</code>; this preferred language typically corresponds directly to the <code>index.md</code> file within the content directory.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span></span></span></code></pre></div><p>If you require a different site name and title for each language, you can configure them individually in <code>hugo.toml</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;English&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Pocket Hugo&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">sidebar</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">subtitle</span> <span class="p">=</span> <span class="s2">&#34;A cover-driven theme for long-term personal writing&#34;</span></span></span></code></pre></div><h2 id="language-switching-settings">Language Switching Settings</h2>
+<p>If you configure two languages, you can switch between them with a single click using a button located in the website header and below the in-text table of contents. If you configure three or more languages, a dropdown menu will be enabled by default in the website header.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">languageSwitcher</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">headerSelectThreshold</span> <span class="p">=</span> <span class="mi">3</span></span></span></code></pre></div><ul>
+<li><a href="/article/responsive-image-pipeline/">Responsive Image Pipeline Demo</a>
+</li>
+<li><a href="/article/shortcodes-demo/">Shortcodes Demo</a>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Header Links Settings</title>
+      <link>http://localhost:1313/en/article/header-links-settings/</link>
+      <pubDate>Thu, 05 Feb 2026 01:00:00 &#43;0000</pubDate>
+      <guid>http://localhost:1313/en/article/header-links-settings/</guid>
+      <description>How to configure the main header links, social links, and header tools in Pocket Hugo Theme.</description>
+      <content:encoded><![CDATA[<p>This page explains how each part works from a theme user&rsquo;s point of view.</p>
+<h2 id="1-how-the-main-header-navigation-works">1. How the main header navigation works</h2>
+<p>The main navigation is <strong>not</strong> built by scanning every page under <code>content/page/</code>.</p>
+<p>Instead, the header reads Hugo&rsquo;s <code>main</code> menu:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl"><span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.Site.Menus.main</span><span class="w"> </span><span class="cp">}}</span></span></span></code></pre></div><p>That means a page only appears in the main header if you add it to <code>menu.main</code> in that page&rsquo;s front matter.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Guide&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">slug</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;guide&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">menu</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">main</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span>-<span class="m">45</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nn">---</span></span></span></code></pre></div><p>In this theme:</p>
+<ul>
+<li><code>menu.main</code> decides whether a page becomes a header candidate</li>
+<li><code>weight</code> controls the order</li>
+<li>smaller weights appear earlier</li>
+</ul>
+<p>For example, these demo pages use this pattern:</p>
+<ul>
+<li><code>talks</code>: <code>weight: -90</code></li>
+<li><code>links</code>: <code>weight: -50</code></li>
+<li><code>guide</code>: <code>weight: -45</code></li>
+<li><code>about</code>: <code>weight: -40</code></li>
+</ul>
+<p>So if you want to add your own fixed page to the header, the normal way is:</p>
+<ol>
+<li>Create the page.</li>
+<li>Add <code>menu.main</code>.</li>
+<li>Give it a <code>weight</code>.</li>
+</ol>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Docs&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">slug</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;docs&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">menu</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">main</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span>-<span class="m">42</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nn">---</span></span></span></code></pre></div><h2 id="2-how-to-configure-social-links">2. How to configure social links</h2>
+<p>The social links in the header come from <code>params.social</code> in <code>hugo.toml</code>.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">social</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;GitHub&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/your-name&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;brand-github&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">social</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;RSS&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/index.xml&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;rss&#34;</span></span></span></code></pre></div><p>Each item usually includes:</p>
+<ul>
+<li><code>name</code>: used as the accessible label and tooltip</li>
+<li><code>url</code>: the link target</li>
+<li><code>icon</code>: the icon id used by the theme</li>
+</ul>
+<p>If you want to add your own small icon, the simplest way is to put an SVG into
+<code>assets/icons/</code> and then reference its file name without the <code>.svg</code> suffix.
+For example, you can search online for a suitable SVG icon, save it as
+something like <code>assets/icons/brand-mastodon.svg</code>, and then use:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">social</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Mastodon&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://example.social/@your-name&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;brand-mastodon&#34;</span></span></span></code></pre></div><p>In this theme:</p>
+<ul>
+<li>internal links such as <code>/index.xml</code> stay in the same tab</li>
+<li>external links open in a new tab automatically</li>
+</ul>
+<p>If you remove all <code>[[params.social]]</code> entries, the social links area disappears.</p>
+<h2 id="3-the-three-tools-in-the-top-right-corner">3. The three tools in the top-right corner</h2>
+<p>The top-right area can show up to three controls:</p>
+<ul>
+<li>language switcher</li>
+<li>color palette picker</li>
+<li>dark/light mode switch</li>
+</ul>
+<p>These three do <strong>not</strong> follow the same rules.</p>
+<h3 id="language-switcher-behavior">Language switcher behavior</h3>
+<p>The language switcher is rendered by the translation toggle partial.</p>
+<p>It only appears when the current page actually has translations.</p>
+<p>That means:</p>
+<ul>
+<li>if your site has only one language, it does not show</li>
+<li>if a page has no translated counterpart, it does not show on that page</li>
+</ul>
+<p>The header behavior is also affected by this setting in <code>hugo.toml</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">languageSwitcher</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">headerSelectThreshold</span> <span class="p">=</span> <span class="mi">2</span></span></span></code></pre></div><p>This value controls when the header uses:</p>
+<ul>
+<li>a direct switch icon</li>
+<li>or a dropdown menu with language abbreviations</li>
+</ul>
+<p>Practical rule:</p>
+<ul>
+<li>if total languages are less than or equal to the threshold, the header shows a simple switch entry</li>
+<li>if total languages are greater than the threshold, the header shows a dropdown</li>
+</ul>
+<p>So this button can disappear naturally when your site or page is not translated.</p>
+<h3 id="color-palette-picker-behavior">Color palette picker behavior</h3>
+<p>The palette picker is optional.</p>
+<p>It is controlled by:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">colorScheme</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">showPicker</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div><p>The theme also accepts the legacy name:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">showPalettePicker</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div><p>If both are false or missing, the palette picker does not appear.</p>
+<p>So this is a header tool that you can explicitly turn off in configuration.</p>
+<h3 id="darklight-mode-switch-behavior">Dark/light mode switch behavior</h3>
+<p>The dark/light switch is controlled by:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">colorScheme</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">toggle</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div><p>The theme also supports the older compatibility key:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">colorSchemeToggle</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div><p>In the example site, this switch is enabled by default, so most users will see it unless they deliberately change the config.</p>
+<p>Compared with the other two tools:</p>
+<ul>
+<li>the language switcher may disappear automatically when translations are not available</li>
+<li>the palette picker can be switched off directly</li>
+<li>the dark/light toggle is usually kept visible because it is enabled by default in normal theme setup</li>
+</ul>
+<p>If you want it hidden, set the related toggle option to <code>false</code>.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

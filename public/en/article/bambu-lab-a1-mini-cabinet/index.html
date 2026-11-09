@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-layout-mode="single" data-palette="black-gold-elegance"  style="--content-width:1080px;--image-brightness-light:1;--image-brightness-dark:0.85;--cover-image-border-width:1px;--content-image-border-width:1px;--title-card-border-width:1px;--cover-fallback-title-font-family:\"fix-punct\", \"confuse-punct\", system-ui, -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", sans-serif;--cover-fallback-title-font-weight:900;--cover-fallback-title-letter-spacing:-0.03em;">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Bambu Lab A1 mini cabinet · The Neetpiq Lab
+</title>
+    <script>
+    (function () {
+        var key = 'StackColorScheme';
+        var paletteKey = 'PocketPalettePreset';
+        var media = window.matchMedia('(prefers-color-scheme: dark)');
+        var defaultTheme = "light";
+        var defaultPalette = "black-gold-elegance";
+        var validPalettes = ['golden-summer-fields', 'soft-pastel-shades', 'black-gold-elegance', 'fresh-greens', 'light-steel', 'deep-sea-blue', 'morandi-mist', 'monochrome-core'];
+        var stored = null;
+        var storedPalette = null;
+
+        try {
+            stored = localStorage.getItem(key);
+            storedPalette = localStorage.getItem(paletteKey);
+        } catch (e) {
+            stored = null;
+            storedPalette = null;
+        }
+
+        var resolved = stored === 'dark' || stored === 'light'
+            ? stored
+            : ((defaultTheme === 'dark' || defaultTheme === 'light')
+                ? defaultTheme
+                : (media.matches ? 'dark' : 'light'));
+        var resolvedPalette = validPalettes.indexOf(storedPalette) > -1
+            ? storedPalette
+            : (validPalettes.indexOf(defaultPalette) > -1 ? defaultPalette : 'golden-summer-fields');
+
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.dataset.scheme = resolved;
+        document.documentElement.dataset.palette = resolvedPalette;
+        document.documentElement.style.colorScheme = resolved;
+    })();
+</script>
+
+    
+    
+    
+    
+    
+        
+    
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <meta name="theme-color" content="#f4f6f8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1623" media="(prefers-color-scheme: dark)">
+    
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+    
+
+
+<meta name="description" content="After setting up my new Bambu Lab A1 mini, I built a wooden cabinet on wheels for it.">
+<link rel="canonical" href="http://localhost:1313/en/article/bambu-lab-a1-mini-cabinet/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="The Neetpiq Lab">
+<meta property="og:title" content="Bambu Lab A1 mini cabinet · The Neetpiq Lab
+">
+<meta property="og:description" content="After setting up my new Bambu Lab A1 mini, I built a wooden cabinet on wheels for it.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/en/article/bambu-lab-a1-mini-cabinet/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Bambu Lab A1 mini cabinet · The Neetpiq Lab
+">
+<meta name="twitter:description" content="After setting up my new Bambu Lab A1 mini, I built a wooden cabinet on wheels for it.">
+
+
+    <meta property="article:published_time" content="2026-09-17T00:00:00Z">
+    <meta property="article:modified_time" content="2026-09-17T00:00:00Z">
+    <meta property="article:section" content="3D-Print"><meta property="article:section" content="Lab-Legno">
+    <meta property="article:tag" content="Bambulab-A1-Mini">
+
+
+
+    <link rel="alternate" hreflang="en" href="http://localhost:1313/en/article/bambu-lab-a1-mini-cabinet/">
+
+    <link rel="alternate" hreflang="it" href="http://localhost:1313/it/article/bambu-lab-a1-mini-cabinet/">
+
+
+    
+        <link rel="alternate" hreflang="x-default" href="http://localhost:1313/en/article/bambu-lab-a1-mini-cabinet/">
+    
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "\"Bambu Lab A1 mini cabinet\"",
+  "name": "\"Bambu Lab A1 mini cabinet · The Neetpiq Lab\\r\\n\"",
+  "description": "\"After setting up my new Bambu Lab A1 mini, I built a wooden cabinet on wheels for it.\"",
+  "url": "\"http://localhost:1313/en/article/bambu-lab-a1-mini-cabinet/\"",
+  "inLanguage": "\"en\"",
+  "datePublished": "\"2026-09-17T00:00:00Z\"",
+  "dateModified": "\"2026-09-17T00:00:00Z\"",
+  "publisher": {
+    "@type": "Organization",
+    "name": "\"The Neetpiq Lab\""
+  }
+}
+</script>
+
+    
+    
+    
+        
+        <link rel="stylesheet" href="/css/main.css">
+    
+    
+    
+    
+</head>
+<body class="template-single">
+    <header class="site-header">
+    <div class="site-header__inner">
+        <div class="site-brand">
+            
+            
+                
+                    
+                
+            
+
+            
+                <a class="site-brand__avatar" href="/en/">
+                    <img src="/img/logo-default.png" alt="The Neetpiq Lab">
+                </a>
+            
+
+            <div class="site-brand__text">
+                <a class="site-brand__title" href="/en/">The Neetpiq Lab</a>
+                <p class="site-brand__subtitle">Space for experiments in the software world, between homelabs, devops and small projects with IoT devices and a touch of 3D printing when needed to give shape to ideas.</p>
+            </div>
+        </div>
+
+        <div class="site-header__nav">
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="main-nav__link" href="/en/">Home</a>
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/talks/" >Talks</a>
+                    
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/archives/" >Archives</a>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/links/" >Links</a>
+                    
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/guide/" >Guide</a>
+                    
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/resources/" >Resources</a>
+                    
+                
+                    
+                    
+                        <a class="main-nav__link" href="/en/about/" >About</a>
+                    
+                
+            </nav>
+
+            
+                <nav class="social-nav" aria-label="Social links">
+                    
+                        
+                        
+                        
+                        
+                            <a
+                                class="social-nav__link"
+                                href="https://github.com/h2dcc/pocket-hugo-theme"
+                                title="GitHub"
+                                target="_blank" rel="me noopener noreferrer"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                            </a>
+                        
+                    
+                        
+                        
+                        
+                        
+                            <a
+                                class="social-nav__link"
+                                href="https://www.facebook.com/"
+                                title="Facebook"
+                                target="_blank" rel="me noopener noreferrer"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+  <path d="M13.5 21v-7h2.3l.4-3h-2.7V9.2c0-.9.3-1.5 1.6-1.5H16V5.1c-.5-.1-1.4-.1-2.3-.1-2.3 0-3.8 1.4-3.8 4V11H7.5v3h2.4v7h3.6Z"/>
+</svg>
+
+                            </a>
+                        
+                    
+                        
+                        
+                        
+                        
+                            <a
+                                class="social-nav__link"
+                                href="https://twitter.com/"
+                                title="Twitter"
+                                target="_blank" rel="me noopener noreferrer"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+  <path d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.2L6.7 22H3.6l7.3-8.3L1.5 2h6.3l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.6 3.9H4.8L17.8 20Z"/>
+</svg>
+
+                            </a>
+                        
+                    
+                        
+                        
+                        
+                        
+                            <a
+                                class="social-nav__link"
+                                href="/index.xml"
+                                title="RSS"
+                                
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                            </a>
+                        
+                    
+                </nav>
+            
+        </div>
+
+        <div class="header-tools">
+            
+
+            
+
+            
+
+
+    
+    
+
+
+
+    
+    
+    
+    
+
+    
+        <div class="translation-toggle translation-toggle--header">
+            
+                
+                    
+                        <a
+                            class="translation-toggle__header-link header-tool header-tool--icon"
+                            href="/it/"
+                            title="Switch language: Italian"
+                            aria-label="Switch language: Italian"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                        </a>
+                    
+                
+            
+        </div>
+    
+
+
+
+            
+        </div>
+    </div>
+</header>
+
+
+    <div class="site-shell">
+        <main class="site-main">
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <article class="article-page">
+        <header class="article-page__header">
+            
+                
+                
+                
+                    <div class="article-page__cover">
+                        
+                            
+
+
+
+
+<div class="cover-fallback cover-fallback--single" data-cover-palette="black-gold-elegance" data-cover-tone="dark">
+    <div class="cover-fallback__inner">
+        <p class="cover-fallback__title">Bambu Lab A1 mini cabinet</p>
+    </div>
+</div>
+
+                        
+                    </div>
+                
+            
+
+            <div class="article-page__meta">
+                
+                    <h1>Bambu Lab A1 mini cabinet</h1>
+                
+                <div class="meta-line">
+                    <span>2026-09-17</span>
+                    
+                        <span class="meta-categories">
+                            
+                                
+                                <a href="/en/categories/3d-print/">3D-Print</a>
+                            
+                                <span class="meta-sep">/</span>
+                                <a href="/en/categories/lab-legno/">Lab-Legno</a>
+                            
+                        </span>
+                    
+                    <span>2 min read</span>
+                    
+                        <span>265 words</span>
+                    
+                    
+
+
+
+
+    
+    
+    
+    
+
+    
+        <div class="translation-toggle translation-toggle--inline">
+            
+                
+                    
+                        <a
+                            class="translation-toggle__text-link translation-toggle__text-link--icon"
+                            href="/it/article/bambu-lab-a1-mini-cabinet/"
+                            title="Switch language: Italian"
+                            aria-label="Switch language: Italian"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                        </a>
+                    
+                
+            
+        </div>
+    
+
+
+                </div>
+                
+                    
+                        <blockquote class="article-page__description">
+                            <span class="article-page__description-label">Description</span>
+                            After setting up my new Bambu Lab A1 mini, I built a wooden cabinet on wheels for it.
+                        </blockquote>
+                    
+                
+            </div>
+        </header>
+
+        
+            <div class="article-page__toc-mobile">
+                
+<section class="widget-simple widget-simple--toc">
+    <h2 class="widget-simple__title">Contents</h2>
+    <div class="toc-widget"><nav id="TableOfContents">
+  <ol>
+    <li><a href="#the-project">The project</a></li>
+    <li><a href="#working-on">Working on</a></li>
+    <li><a href="#completed">Completed</a></li>
+  </ol>
+</nav></div>
+</section>
+
+            </div>
+        
+
+        <div class="article-page__content">
+            <div class="article-content" style="--article-content-image-mobile-max-height: 160px; --article-content-image-tablet-max-height: 250px; --article-content-image-desktop-max-height: 350px; --article-content-image-fullwidth-fit: cover;">
+                <p>The Bambu Lab A1 mini is truly a gem of a printer. Although it has a small print area (180x180x180 mm), it is a very precise printer and very easy to use.</p>
+<p>So I decided to build a small cabinet to place it on, one that would have space to store the filament spools.</p>
+<h2 id="the-project">The project</h2>
+<p>I started with a small sketch on paper, which, for now, remains the quickest method for me when it comes to projects of this scale. Then I went to the BricoFer store near my house, bought two 40x100 cm panels of laminated particleboard, and had them cut so that the edge banding would be visible once assembled.</p>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto.jpg" data-lightbox-image>
+        <img
+            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto_hu_7734c667a9fc32b6.webp"
+            alt="Cabinet Design"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto_hu_7734c667a9fc32b6.webp 640w"
+            sizes="100vw"
+            width="747"
+            height="1146"
+             title="Cabinet Design"
+        >
+    </a>
+    <figcaption>Cabinet Design</figcaption>
+</figure>
+</p>
+<h2 id="working-on">Working on</h2>
+<p>With the pieces cut to size, I began assembly. I used angle clamps and a quick-release clamp to hold the cabinet sides in place.</p>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05.jpg" data-lightbox-image>
+        <img
+            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_27e3ba69d39df1e8.webp"
+            alt="Cabinet under construction"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_63fc31968ceea299.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_27e3ba69d39df1e8.webp 960w"
+            sizes="100vw"
+            width="1382"
+            height="1843"
+             title="Cabinet under construction"
+        >
+    </a>
+    <figcaption>Cabinet under construction</figcaption>
+</figure>
+</p>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06.jpg" data-lightbox-image>
+        <img
+            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_cfd223b6b3a1ae8d.webp"
+            alt="Close-up of the clamp"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_f8fe203ce592e71c.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_cfd223b6b3a1ae8d.webp 960w"
+            sizes="100vw"
+            width="1382"
+            height="1843"
+             title="Close-up of the clamp"
+        >
+    </a>
+    <figcaption>Close-up of the clamp</figcaption>
+</figure>
+</p>
+<p>And finally, I assembled the remaining piece—even though it was shorter than the pieces at the bottom and top—to create a shelf in the middle of the cabinet.</p>
+<h2 id="completed">Completed</h2>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02.jpg" data-lightbox-image>
+        <img
+            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_5857488f50698ac8.webp"
+            alt="Cabinet completed"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_c4a88f9f87589853.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_5857488f50698ac8.webp 960w"
+            sizes="100vw"
+            width="1382"
+            height="1843"
+             title="Cabinet completed"
+        >
+    </a>
+    <figcaption>Cabinet completed</figcaption>
+</figure>
+</p>
+<p>Finally, my Bambulab A1 Mini has its own cabinet with wheels so I can move it around the house.</p>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera.jpg" data-lightbox-image>
+        <img
+            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_48cedb0dc81717d2.webp"
+            alt="Cabinet in operation"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_3bd9f11c1a52eda7.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_48cedb0dc81717d2.webp 960w"
+            sizes="100vw"
+            width="1382"
+            height="1843"
+             title="Cabinet in operation"
+        >
+    </a>
+    <figcaption>Cabinet in operation</figcaption>
+</figure>
+</p>
+<p>And I also added a sort of UPS using a <a href="https://it.bluettipower.eu/products/bluetti-eb3a" target="_blank" rel="noopener noreferrer">Bluetti EB3A 600W (1200W peak)</a>
+ that I can disconnect from the mains so I can move the printer around the house while keeping it powered.</p>
+<p>As you can see, I&rsquo;m quite fond of this type of structure, which I also used to build the enclosures for the two Anycubic Kobra S1 Combo printers.</p>
+<p>ooOOoo</p>
+
+            </div>
+        </div>
+
+        <div class="article-backlinks-inline">
+            
+        </div>
+
+        
+
+
+
+    </article>
+
+        </main>
+
+        
+    
+    <aside class="sidebar-right">
+    
+
+    
+        
+        
+            
+<section class="widget-simple widget-simple--toc">
+    <h2 class="widget-simple__title">Contents</h2>
+    <div class="toc-widget"><nav id="TableOfContents">
+  <ol>
+    <li><a href="#the-project">The project</a></li>
+    <li><a href="#working-on">Working on</a></li>
+    <li><a href="#completed">Completed</a></li>
+  </ol>
+</nav></div>
+</section>
+
+        
+    
+
+    
+        
+        
+
+    
+
+    
+        
+        
+    
+</aside>
+
+    </div>
+
+    
+        <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">↑</button>
+    
+
+    <footer class="site-footer">
+    <p>
+        &copy; 2026 The Neetpiq Lab
+         - MIT licensed demo content
+    </p>
+</footer>
+
+    
+        <script src="/js/main.js" defer></script>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Theme - The Neetpiq Lab</title>
+    <link>http://localhost:1313/it/tags/theme/</link>
+    <description>Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Mon, 09 Nov 2026 16:44:55 &#43;0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/it/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nuovo Post di Test</title>
+      <link>http://localhost:1313/it/article/nuovo-post-di-test/</link>
+      <pubDate>Thu, 22 Oct 2026 00:30:00 &#43;0000</pubDate>
+      <guid>http://localhost:1313/it/article/nuovo-post-di-test/</guid>
+      <description>Un altro post di test per capire come utilizzare questo interessante tema per Hugo.</description>
+      <content:encoded><![CDATA[<p>Questo è un altro post di test per capire come utilizzare questo tema.</p>
+<p>ooOOoo</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

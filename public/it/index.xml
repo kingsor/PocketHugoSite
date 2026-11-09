@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>The Neetpiq Lab</title>
+    <link>http://localhost:1313/it/</link>
+    <description>The Neetpiq Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Mon, 09 Nov 2026 18:37:16 &#43;0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mobiletto per Bambu Lab A1 mini</title>
+      <link>http://localhost:1313/it/article/bambu-lab-a1-mini-cabinet/</link>
+      <pubDate>Thu, 17 Sep 2026 00:00:00 &#43;0000</pubDate>
+      <guid>http://localhost:1313/it/article/bambu-lab-a1-mini-cabinet/</guid>
+      <description>Dopo aver messo in servizio la mia nuova Bambu Lab A1 mini, le ho creato un mobiletto in legno su rotelle.</description>
+      <content:encoded><![CDATA[<p>La Bambu Lab A1 mini è veramente un gioiellino di stampante. Nonostante abbia un&rsquo;area di stampa ridotta (180x180x180mm), è una stampante molto precisa e molto facile da utilizzare.</p>
+<p>Ho pensato quindi di realizzare un mobiletto sul quale posarla e che avesse dello spazio per contenere le bobine di filamento.</p>
+<h2 id="il-progetto">Il progetto</h2>
+<p>Sono partito da un progettino su carta, che per ora rimane il sistema più rapido per me per creazioni di questa entità. Poi sono andato al BricoFer che ho vicino a casa, ho acquistato due pannelli di trucciolare rivestito da 40x100cm e li ho fatti tagliare in modo che una volta montato la bordatura fosse visibile.</p>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto.jpg" data-lightbox-image>
+        <img
+            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto_hu_7734c667a9fc32b6.webp"
+            alt="Progetto del mobiletto"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto_hu_7734c667a9fc32b6.webp 640w"
+            sizes="100vw"
+            width="747"
+            height="1146"
+             title="Progetto del mobiletto"
+        >
+    </a>
+    <figcaption>Progetto del mobiletto</figcaption>
+</figure>
+</p>
+<h2 id="in-construzione">In construzione</h2>
+<p>Con i pezzi tagliati di misura ho iniziato il montaggio. Ho utilizzato dei morsetti ad angolo e un morsetto a sgancio rapido per tenere fermi i fianchetti del mobiletto.</p>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05.jpg" data-lightbox-image>
+        <img
+            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_27e3ba69d39df1e8.webp"
+            alt="Mobiletto in costruzione"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_63fc31968ceea299.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_27e3ba69d39df1e8.webp 960w"
+            sizes="100vw"
+            width="1382"
+            height="1843"
+             title="Mobiletto in costruzione"
+        >
+    </a>
+    <figcaption>Mobiletto in costruzione</figcaption>
+</figure>
+</p>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06.jpg" data-lightbox-image>
+        <img
+            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_cfd223b6b3a1ae8d.webp"
+            alt="Particolare del morsetto"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_f8fe203ce592e71c.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_cfd223b6b3a1ae8d.webp 960w"
+            sizes="100vw"
+            width="1382"
+            height="1843"
+             title="Particolare del morsetto"
+        >
+    </a>
+    <figcaption>Particolare del morsetto</figcaption>
+</figure>
+</p>
+<p>E infine ho montato il pezzo che mi era rimasto, anche se più corto dei pezzi alla base e alla sommità, per avere un ripiano nella parte centrale del mobiletto.</p>
+<h2 id="completato">Completato</h2>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02.jpg" data-lightbox-image>
+        <img
+            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_5857488f50698ac8.webp"
+            alt="Mobiletto completato"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_c4a88f9f87589853.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_5857488f50698ac8.webp 960w"
+            sizes="100vw"
+            width="1382"
+            height="1843"
+             title="Mobiletto completato"
+        >
+    </a>
+    <figcaption>Mobiletto completato</figcaption>
+</figure>
+</p>
+<p>Finalmente la mia Bambulab A1 Mini ha il suo mobiletto con le rotelle per poterla portare in giro per casa.</p>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera.jpg" data-lightbox-image>
+        <img
+            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_48cedb0dc81717d2.webp"
+            alt="Mobiletto in opera"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_3bd9f11c1a52eda7.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_48cedb0dc81717d2.webp 960w"
+            sizes="100vw"
+            width="1382"
+            height="1843"
+             title="Mobiletto in opera"
+        >
+    </a>
+    <figcaption>Mobiletto in opera</figcaption>
+</figure>
+</p>
+<p>E ho anche aggiunto una sorta di UPS utilizzando un <a href="https://it.bluettipower.eu/products/bluetti-eb3a" target="_blank" rel="noopener noreferrer">Bluetti EB3A da 600W (1200W Picco)</a>
+ che posso staccare dalla rete per portare la stampante in giro per la casa rimanendo alimentata.</p>
+<p>Come si può notare sono affezionato a questo tipo di struttura che ho utilizzato anche per realizzare il contenitori delle due Anycubic Kobra S1 Combo.</p>
+<p>ooOOoo</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Come scegliere gli argomenti per un post</title>
+      <link>http://localhost:1313/it/article/scegliere-argomenti-post/</link>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 &#43;0000</pubDate>
+      <guid>http://localhost:1313/it/article/scegliere-argomenti-post/</guid>
+      <description>Consigli su come scegliere gli argomenti per i propri contenuti</description>
+      <content:encoded><![CDATA[<h2 id="consiglio-per-argomenti-da-post">Consiglio per argomenti da post</h2>
+<p><em>07/05/26</em></p>
+<p>Oggi ho letto questo <a href="https://www.linkedin.com/posts/giuliomichelon_consiglio-smetti-di-scrivere-post-sul-fatto-share-7458062577986641920-a1CU/" target="_blank" rel="noopener noreferrer">consiglio</a>
+ di <a href="https://www.linkedin.com/in/giuliomichelon/" target="_blank" rel="noopener noreferrer">Giulio Michelon</a>
+ su come scegliere un argomento per postare su Linkedin.</p>
+<blockquote>
+<p>Consiglio: smetti di scrivere post sul fatto che &ldquo;postare su LinkedIn è importante&rdquo;</p>
+<p>Invece chiediti: di che cosa sono sinceramente curioso? Su cosa ho speso almeno un&rsquo;ora per capire come funzionava?</p>
+</blockquote>
+<blockquote>
+<p>La risposta a quella domanda produce il miglior contenuto che puoi scrivere. Fa due cose fondamentali:</p>
+<ol>
+<li>Mostra chi sei (come ad esempio il lavoro su design system + AI di Andrea che ho visto ieri!)</li>
+<li>Ti connette con persone che sono curiose delle stesse cose di cui sei curioso te</li>
+</ol>
+</blockquote>
+<h2 id="what-was-your-win-this-week">What was your win this week?</h2>
+<p><em>27/04/26</em></p>
+<p>Sulla &ldquo;DEV Community Digest&rdquo; di oggi c&rsquo;è il link ad un post di venerdì scorso (24/04).</p>
+<ul>
+<li><a href="https://dev.to/devteam/what-was-your-win-this-week-8ep" target="_blank" rel="noopener noreferrer">What was your win this week!?</a>
+</li>
+</ul>
+<blockquote>
+<p>Looking back on your week &ndash; what was something you&rsquo;re proud of?</p>
+<p>All wins count &ndash; big or small 🎉</p>
+<p>Examples of &lsquo;wins&rsquo; include:</p>
+<ul>
+<li>Getting a promotion!</li>
+<li>Starting a new project</li>
+<li>Fixing a tricky bug</li>
+<li>Checking off that one &ldquo;boring&rdquo; admin task you’ve been dreading</li>
+</ul>
+<p>Happy Friday!</p>
+</blockquote>
+<p>Trovo che questa domanda sia molto utile per ricavare almeno un post di riepilogo di quanto fatto durante la settimana.</p>
+<p>Si ricollega anche al consiglio di Giulio perchè contiene almento un argomento, si spera interessante, sul quale ho lavorato che potrebbe diventare un post più corposo e strutturato in futuro.</p>
+<p>Oltre al fatto di aver risolto qualche problema o approfondito qualche argomento particolare relativo al proprio lavoro e che si spera sia stato anche interessante.</p>
+<p>ooOOoo</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Ho scelto Hugo per questo blog</title>
+      <link>http://localhost:1313/it/article/choosing-hugo/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 &#43;0000</pubDate>
+      <guid>http://localhost:1313/it/article/choosing-hugo/</guid>
+      <description>Dopo aver utilizzato Jekyll sono passato a Hugo e mi trovo molto bene.</description>
+      <content:encoded><![CDATA[<p>Per un po&rsquo; di tempo per il mio blog ho utilizzato <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>
+, originariamente supportato di default da <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+. Valido come <a href="https://jamstack.org/generators/" target="_blank" rel="noopener noreferrer">sistema di generazione di pagine statiche</a>
+ ma complicato da testare in locale su Windows se non tramite <a href="https://github.com/BretFisher/jekyll-serve" target="_blank" rel="noopener noreferrer">docker</a>
+.</p>
+<p>Allora ho cercato altro e alla fine sono approdato su <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>
+, molto pratico da utilizzare, scritto in <a href="https://go.dev/" target="_blank" rel="noopener noreferrer">Go</a>
+, supporta pagine e post scritti in <a href="https://it.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener noreferrer">markdown</a>
+ ed è molto veloce a generare il sito in locale per fare i test prima di pubblicare.</p>
+<p>Ha un ottimo <a href="https://gohugo.io/documentation/" target="_blank" rel="noopener noreferrer">supporto</a>
+ sul sito e su <a href="https://stackoverflow.com/questions/tagged/hugo" target="_blank" rel="noopener noreferrer">Stack Overflow</a>
+ e dispone di numerosi <a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreferrer">temi gratuiti</a>
+ tra i quali scegliere se non si è in grado o non si vuole crearne di propri.</p>
+<p>GitHub Pages <a href="https://gohugo.io/host-and-deploy/host-on-github-pages/" target="_blank" rel="noopener noreferrer">supporta la pubblicazione di un sito con hugo</a>
+ e quindi è molto pratico scrivere post per il proprio blog in locale, testare il risultato sempre in locale, apportare le correzioni del caso e quando si è soddisfatti fare commit e push sul repo relativo e dopo pochi minuti vedere aggiornato il proprio blog online.</p>
+<p>ooOOoo</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

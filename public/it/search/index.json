@@ -1,0 +1,34 @@
+[{
+        "title": "Nuovo Post di Test",
+        "permalink": "/it/article/nuovo-post-di-test/",
+        "description": "Un altro post di test per capire come utilizzare questo interessante tema per Hugo.",
+        "slug": "nuovo-post-di-test",
+        "content": "",
+        "categories": ["Demo"],
+        "tags": ["Hugo","Cover Card","Theme"]
+    },{
+        "title": "Come scegliere gli argomenti per un post",
+        "permalink": "/it/article/scegliere-argomenti-post/",
+        "description": "Un altro post di test per capire come utilizzare questo interessante tema per Hugo.",
+        "slug": "scegliere-argomenti-post",
+        "content": "",
+        "categories": ["Management"],
+        "tags": ["Content Creation","Note to Self"]
+    },{
+        "title": "Ho scelto Hugo per questo blog",
+        "permalink": "/it/article/choosing-hugo/",
+        "description": "Dopo aver utilizzato Jekyll sono passato a Hugo e mi trovo molto bene.",
+        "slug": "choosing-hugo",
+        "content": "",
+        "categories": ["Blogging"],
+        "tags": ["Hugo","Note to Self"]
+    },{
+        "title": "",
+        "permalink": "/it/article/",
+        "description": "",
+        "slug": "",
+        "content": "",
+        "categories": [],
+        "tags": []
+    }]
+

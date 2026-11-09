@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Pipeline - The Neetpiq Lab</title>
+    <link>http://localhost:1313/en/tags/pipeline/</link>
+    <description>Pipeline</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Nov 2026 16:44:54 &#43;0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/pipeline/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Responsive Image Pipeline Demo</title>
+      <link>http://localhost:1313/en/article/responsive-image-pipeline/</link>
+      <pubDate>Sat, 21 Mar 2026 01:00:00 &#43;0000</pubDate>
+      <guid>http://localhost:1313/en/article/responsive-image-pipeline/</guid>
+      <description>A sample post for checking derived image sizes, inline rendering, and the built-in lightbox.</description>
+      <content:encoded><![CDATA[<p>This article demonstrates the theme&rsquo;s <strong>responsive image pipeline</strong> for inline Markdown images. The same source file is rendered inside the article, constrained by layout rules, and still available in a larger lightbox view.</p>
+<h2 id="inline-image-test">Inline image test</h2>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/responsive-image-pipeline/cover.webp" data-lightbox-image>
+        <img
+            src="/en/article/responsive-image-pipeline/cover_hu_891a2c2ed3e28888.webp"
+            alt="Yue Lu School"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/responsive-image-pipeline/cover_hu_cff19abd5b070e14.webp 640w, /en/article/responsive-image-pipeline/cover_hu_891a2c2ed3e28888.webp 960w"
+            sizes="100vw"
+            width="1080"
+            height="464"
+            
+        >
+    </a>
+    
+</figure>
+</p>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/responsive-image-pipeline/guangzhou.webp" data-lightbox-image>
+        <img
+            src="/en/article/responsive-image-pipeline/guangzhou_hu_e1e939e85e40728a.webp"
+            alt="Guang Zhou"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/responsive-image-pipeline/guangzhou_hu_982af0487a09f27b.webp 640w, /en/article/responsive-image-pipeline/guangzhou_hu_e1e939e85e40728a.webp 960w"
+            sizes="100vw"
+            width="1080"
+            height="691"
+            
+        >
+    </a>
+    
+</figure>
+</p>
+<p><figure class="article-image">
+    <a class="article-image__link" href="/en/article/responsive-image-pipeline/writing.webp" data-lightbox-image>
+        <img
+            src="/en/article/responsive-image-pipeline/writing_hu_d0f50a54ee4873ff.webp"
+            alt="Writing"
+            loading="lazy"
+            decoding="async"
+            srcset="/en/article/responsive-image-pipeline/writing_hu_7d0824451caa5ad9.webp 640w, /en/article/responsive-image-pipeline/writing_hu_d0f50a54ee4873ff.webp 960w"
+            sizes="100vw"
+            width="1080"
+            height="595"
+            
+        >
+    </a>
+    
+</figure>
+</p>
+<p>This represents the default display behavior for images on the webpage. If you wish to adjust the image display height, you can configure this in <code>hugo.toml</code>. If you do not require this feature, you can disable it directly by setting: <code>limitHeight = false</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">images</span><span class="p">.</span><span class="nx">content</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mobileMaxHeight</span> <span class="p">=</span> <span class="s2">&#34;160px&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">tabletMaxHeight</span> <span class="p">=</span> <span class="s2">&#34;250px&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">desktopMaxHeight</span> <span class="p">=</span> <span class="s2">&#34;350px&#34;</span></span></span></code></pre></div><p>This page complements the <a href="/article/image-config-reference/">Image Configuration Reference</a>
+, which focuses on article headers and card covers instead.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

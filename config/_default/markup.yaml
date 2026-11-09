@@ -1,0 +1,18 @@
+# Markdown rendering options.
+goldmark:
+  renderer:
+    unsafe: true
+
+tableOfContents:
+  startLevel: 2
+  endLevel: 4
+  ordered: true
+
+highlight:
+  noClasses: false
+  codeFences: true
+  guessSyntax: true
+  lineNoStart: 1
+  lineNos: false
+  lineNumbersInTable: false
+  tabWidth: 4

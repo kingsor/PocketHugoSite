@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Shortcodes - The Neetpiq Lab</title>
+    <link>http://localhost:1313/en/tags/shortcodes/</link>
+    <description>Shortcodes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Nov 2026 16:44:54 &#43;0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shortcodes Demo</title>
+      <link>http://localhost:1313/en/article/shortcodes-demo/</link>
+      <pubDate>Fri, 06 Mar 2026 01:00:00 &#43;0000</pubDate>
+      <guid>http://localhost:1313/en/article/shortcodes-demo/</guid>
+      <description>A sample page that groups together several practical shortcodes for content-heavy Hugo sites.</description>
+      <content:encoded><![CDATA[<p>This page groups together several practical shortcodes that work well in a content-first Hugo theme. They are intentionally simple, easy to copy, and suitable for essays, notes, and documentation pages.</p>
+<h2 id="fold">Fold</h2>
+<p>Use <code>fold</code> when a section should stay readable without taking too much vertical space.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">{{&lt; fold &#34;Why this shortcode exists&#34; &gt;}}
+</span></span><span class="line"><span class="cl">This hidden block is rendered inside a native `&lt;details&gt;` element.
+</span></span><span class="line"><span class="cl">{{&lt; /fold &gt;}}</span></span></code></pre></div><details>
+    <summary>Why this shortcode exists</summary>
+    This hidden block is rendered inside a native <code>&lt;details&gt;</code> element, so it works without JavaScript and still feels natural in long-form writing.
+</details>
+
+<h2 id="note">Note</h2>
+<p>Use <code>note</code> for callouts such as tips, warnings, or side remarks.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">{{&lt; note type=&#34;info&#34; title=&#34;Content-first&#34; &gt;}}
+</span></span><span class="line"><span class="cl">Pocket Hugo Theme keeps callouts readable without making them look like app UI.
+</span></span><span class="line"><span class="cl">{{&lt; /note &gt;}}</span></span></code></pre></div><div class="shortcode-note shortcode-note--info"><div class="shortcode-note__title">Content-first</div><div class="shortcode-note__body">
+    Pocket Hugo Theme keeps callouts readable without making them look like app UI.
+  </div>
+</div>
+
+<div class="shortcode-note shortcode-note--tip"><div class="shortcode-note__title">Tip</div><div class="shortcode-note__body">
+    Shortcodes like this are useful for tutorials, changelogs, and writing guides.
+  </div>
+</div>
+
+<div class="shortcode-note shortcode-note--warn"><div class="shortcode-note__title">Experimental</div><div class="shortcode-note__body">
+    If you add custom shortcodes, keep them small and easy to understand. Readers should not need to decode the layout before reading the content.
+  </div>
+</div>
+
+<h2 id="badge">Badge</h2>
+<p>Badges are useful for compact status labels inside paragraphs.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">{{&lt; badge &#34;Stable&#34; &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; badge text=&#34;Optional&#34; type=&#34;info&#34; &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; badge text=&#34;Experimental&#34; type=&#34;warn&#34; &gt;}}</span></span></code></pre></div><p><span class="shortcode-badge shortcode-badge--default">Stable</span>
+
+<span class="shortcode-badge shortcode-badge--info">Optional</span>
+
+<span class="shortcode-badge shortcode-badge--warn">Experimental</span>
+</p>
+<h2 id="button">Button</h2>
+<p>Use <code>button</code> when you want a stronger inline call to action than a normal text link.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">{{&lt; button href=&#34;http://localhost:1313/guide/&#34; label=&#34;Open the Guide&#34; &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; button href=&#34;http://localhost:1313/links/&#34; label=&#34;Browse Links&#34; style=&#34;ghost&#34; &gt;}}</span></span></code></pre></div><p><a class="shortcode-button shortcode-button--primary" href="/guide/">Open the Guide</a>
+
+<a class="shortcode-button shortcode-button--ghost" href="/links/">Browse Links</a>
+</p>
+<h2 id="video-and-audio">Video and audio</h2>
+<p>These shortcodes keep common media embeds consistent with the rest of the theme.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">{{&lt; video src=&#34;http://localhost:1313/media/demo.mp4&#34; title=&#34;Local video&#34; &gt;}}Caption{{&lt; /video &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; audio src=&#34;http://localhost:1313/media/demo.mp3&#34; title=&#34;Audio clip&#34; &gt;}}Caption{{&lt; /audio &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; youtube id=&#34;rdwz7QiG0lk&#34; &gt;}}YouTube embed{{&lt; /youtube &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; bilibili bvid=&#34;BV1xx411c7mu&#34; &gt;}}Bilibili embed{{&lt; /bilibili &gt;}}</span></span></code></pre></div><figure class="shortcode-media shortcode-media--video">
+  <video
+    controls
+    preload="metadata"
+    title="HTML5 video"
+    
+    
+    
+    
+    playsinline>
+    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" />
+  </video>
+  <figcaption>A plain HTML5 video wrapper with the theme&rsquo;s default radius and spacing.</figcaption>
+</figure>
+
+<figure class="shortcode-media shortcode-media--audio">
+  <div class="shortcode-audio__title">HTML5 audio</div>
+  <audio controls preload="metadata">
+    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">
+  </audio>
+  <figcaption>A matching audio player for short clips, podcasts, or spoken notes.</figcaption>
+</figure>
+
+<figure class="shortcode-media shortcode-media--embed">
+  <div class="shortcode-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/rdwz7QiG0lk"
+      title="YouTube video"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <figcaption>A YouTube embed wrapped in the same media style.</figcaption>
+</figure>
+
+<figure class="shortcode-media shortcode-media--embed">
+  <div class="shortcode-embed">
+    <iframe
+      src="https://player.bilibili.com/player.html?bvid=BV1xx411c7mu&page=1"
+      title="Bilibili video"
+      loading="lazy"
+      scrolling="no"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <figcaption>A Bilibili embed using the same responsive frame.</figcaption>
+</figure>
+
+<h2 id="timeline">Timeline</h2>
+<p>Use <code>timeline</code> when you want a process, update log, or historical sequence.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">{{&lt; timeline &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; timeline-item date=&#34;2026-01&#34; title=&#34;Planning&#34; &gt;}}Outline the scope.{{&lt; /timeline-item &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; timeline-item date=&#34;2026-02&#34; title=&#34;Build&#34; &gt;}}Ship the first version.{{&lt; /timeline-item &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; /timeline &gt;}}</span></span></code></pre></div><div class="shortcode-timeline">
+  
+<div class="shortcode-timeline__item">
+  <div class="shortcode-timeline__rail"></div>
+  <div class="shortcode-timeline__content">
+    <div class="shortcode-timeline__date">2026-01</div>
+    <div class="shortcode-timeline__title">Planning</div>
+    <div class="shortcode-timeline__body">Outline the first version of the feature and keep the data format small.</div>
+  </div>
+</div>
+
+<div class="shortcode-timeline__item">
+  <div class="shortcode-timeline__rail"></div>
+  <div class="shortcode-timeline__content">
+    <div class="shortcode-timeline__date">2026-02</div>
+    <div class="shortcode-timeline__title">Build</div>
+    <div class="shortcode-timeline__body">Add a simple implementation that fits long-form content rather than app-like UI.</div>
+  </div>
+</div>
+
+<div class="shortcode-timeline__item">
+  <div class="shortcode-timeline__rail"></div>
+  <div class="shortcode-timeline__content">
+    <div class="shortcode-timeline__date">2026-03</div>
+    <div class="shortcode-timeline__title">Polish</div>
+    <div class="shortcode-timeline__body">Tighten copy, spacing, and multilingual examples.</div>
+  </div>
+</div>
+
+
+</div>
+
+<h2 id="columns">Columns</h2>
+<p>Use <code>columns</code> when two ideas need to be compared side by side.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">{{&lt; columns &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; column &gt;}}Left side{{&lt; /column &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; column &gt;}}Right side{{&lt; /column &gt;}}
+</span></span><span class="line"><span class="cl">{{&lt; /columns &gt;}}</span></span></code></pre></div><div class="shortcode-columns">
+  
+<div class="shortcode-columns__item shortcode-columns__item--1">
+  <h3 id="better-for">Better for</h3>
+<ul>
+<li>short comparisons</li>
+<li>feature summaries</li>
+<li>before/after notes</li>
+</ul>
+
+</div>
+
+<div class="shortcode-columns__item shortcode-columns__item--1">
+  <h3 id="avoid-for">Avoid for</h3>
+<ul>
+<li>long essay paragraphs</li>
+<li>deeply nested lists</li>
+<li>content that must stay linear</li>
+</ul>
+
+</div>
+
+
+</div>
+
+<h2 id="gallery">Gallery</h2>
+<p>Use <code>gallery</code> when one article needs a compact image grid without writing a separate Markdown image block for every file.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">{{&lt; gallery pattern=&#34;sample*.webp&#34; columns=&#34;3&#34; &gt;}}</span></span></code></pre></div><p>The shortcode reads matching image files from the current page bundle, renders them as a responsive grid, and reuses the built-in lightbox when you click a photo.</p>
+<section class="shortcode-gallery" style="--gallery-columns: 3; --article-content-image-desktop-max-height: none; --article-content-image-tablet-max-height: none; --article-content-image-mobile-max-height: none;"><figure class="shortcode-gallery__item">
+      <a class="shortcode-gallery__link" href="/en/article/shortcodes-demo/sample1.webp" data-lightbox-image>
+        <img
+          src="/en/article/shortcodes-demo/sample1_hu_769169bf8aa436a6.webp"
+          alt="sample1.webp"
+          loading="lazy"
+          decoding="async"
+          width="1200"
+          height="634"
+        >
+      </a>
+    </figure><figure class="shortcode-gallery__item">
+      <a class="shortcode-gallery__link" href="/en/article/shortcodes-demo/sample2.webp" data-lightbox-image>
+        <img
+          src="/en/article/shortcodes-demo/sample2_hu_30929b063163d0c7.webp"
+          alt="sample2.webp"
+          loading="lazy"
+          decoding="async"
+          width="1200"
+          height="647"
+        >
+      </a>
+    </figure><figure class="shortcode-gallery__item">
+      <a class="shortcode-gallery__link" href="/en/article/shortcodes-demo/sample3.webp" data-lightbox-image>
+        <img
+          src="/en/article/shortcodes-demo/sample3_hu_14c5b80a4fe9479e.webp"
+          alt="sample3.webp"
+          loading="lazy"
+          decoding="async"
+          width="1200"
+          height="610"
+        >
+      </a>
+    </figure><figure class="shortcode-gallery__item">
+      <a class="shortcode-gallery__link" href="/en/article/shortcodes-demo/sample4.webp" data-lightbox-image>
+        <img
+          src="/en/article/shortcodes-demo/sample4_hu_c2bdf2377283164c.webp"
+          alt="sample4.webp"
+          loading="lazy"
+          decoding="async"
+          width="1200"
+          height="892"
+        >
+      </a>
+    </figure><figure class="shortcode-gallery__item">
+      <a class="shortcode-gallery__link" href="/en/article/shortcodes-demo/sample5.webp" data-lightbox-image>
+        <img
+          src="/en/article/shortcodes-demo/sample5_hu_bd8ccefce6c594d9.webp"
+          alt="sample5.webp"
+          loading="lazy"
+          decoding="async"
+          width="1200"
+          height="1190"
+        >
+      </a>
+    </figure><figure class="shortcode-gallery__item">
+      <a class="shortcode-gallery__link" href="/en/article/shortcodes-demo/sample6.webp" data-lightbox-image>
+        <img
+          src="/en/article/shortcodes-demo/sample6_hu_5a08dc0e4d4206dd.webp"
+          alt="sample6.webp"
+          loading="lazy"
+          decoding="async"
+          width="1200"
+          height="2058"
+        >
+      </a>
+    </figure></section>
+<h2 id="why-this-matters">Why this matters</h2>
+<p>These shortcodes are not meant to turn the theme into a component library. They simply give writers a few reusable building blocks that fit the theme without adding a framework layer.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

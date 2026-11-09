@@ -1,0 +1,86 @@
+# Base URL for production. Replace this before deployment.
+baseURL: "https://example.org/"
+
+# Site title shown in the header, browser title, and feeds.
+title: "Pocket Hugo"
+
+# Theme folder name.
+theme: "pocket-hugo-theme"
+
+# Default language for the site.
+# `locale` is the site language tag used in metadata and HTML, so prefer a
+# standard BCP 47 value such as `en`, `en-US`, `zh-CN`, `zh-Hans`, `zh-TW`,
+# `fr`, `es`, `ja`, `de`, `pt`, `ko`, `ru`, or `it`. Avoid non-standard values
+# like `cn`.
+locale: "en"
+
+# `defaultContentLanguage` is the Hugo language key that chooses which
+# language block (see languages.yaml) and which `index.xx.md` files are treated
+# as the default. This value should match a language key defined in
+# languages.yaml, such as `en`, `zh-cn`, `zh-tw`, `fr`, `es`, `ja`, `de`, `pt`,
+# `ko`, `ru`, or `it`. The theme ships UI i18n files for all of these.
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: true
+
+# Enable CJK-aware word counting for Chinese, Japanese, and Korean text.
+hasCJKLanguage: false
+
+# Generate robots.txt automatically.
+enableRobotsTXT: true
+
+# Main content sections used by homepage lists and archives.
+mainSections:
+  - posts
+
+# Footer copyright text shown after the current year.
+copyright: "MIT licensed demo content"
+
+# Talks JSON feed media type.
+mediaTypes:
+  application/feed+json:
+    suffixes:
+      - json
+
+outputFormats:
+  # RSS output for the talks page.
+  TalksRSS:
+    mediaType: "application/rss+xml"
+    baseName: "talks"
+    isPlainText: false
+    notAlternative: true
+  # JSON output for the talks page.
+  TalksJSON:
+    mediaType: "application/feed+json"
+    baseName: "talks"
+    isPlainText: true
+    notAlternative: true
+
+# Posts per page.
+pagination:
+  pagerSize: 5
+
+# RSS item count.
+services:
+  rss:
+    limit: 10
+
+# URL patterns.
+permalinks:
+  posts: "/article/:slug/"
+  page: "/:slug/"
+
+# Taxonomies.
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+# Related content.
+related:
+  includeNewer: true
+  threshold: 1
+  toLower: false
+  indices:
+    - name: "tags"
+      weight: 200
+    - name: "categories"
+      weight: 100

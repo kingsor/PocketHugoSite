@@ -1,0 +1,376 @@
+# Base URL for production. Replace this before deployment.
+baseURL = "https://example.org/"
+
+# Site title shown in the header, browser title, and feeds.
+title = "Pocket Hugo"
+
+# Theme folder name.
+theme = "pocket-hugo-theme"
+
+# Default language for the site.
+# `languageCode` is the site language tag used in metadata and HTML, so prefer a
+# standard BCP 47 value such as `en`, `en-US`, `zh-CN`, `zh-Hans`, `zh-TW`,
+# `fr`, `es`, `ja`, `de`, `pt`, `ko`, `ru`, or `it`. Avoid non-standard values
+# like `cn`.
+
+languageCode = "en"
+
+# `defaultContentLanguage` is the Hugo language key that chooses which
+# `[languages.xx]` block and which `index.xx.md` files are treated as the default.
+# This value should match the language key you define below, such as `en`,
+# `zh-cn`, `zh-tw`, `fr`, `es`, `ja`, `de`, `pt`, `ko`, `ru`, or `it`.
+# A common Chinese setup is:
+# `languageCode = "zh-CN"` + `defaultContentLanguage = "zh-cn"`
+# or
+# `languageCode = "zh-Hans"` + `defaultContentLanguage = "zh-cn"`
+# The example site keeps only `en` and `zh-cn` enabled by default to stay small,
+# but the theme also ships UI i18n files for `fr`, `es`, `ja`, `de`, `pt`,
+# `ko`, `ru`, `zh-tw`, and `it`. 
+
+defaultContentLanguage = "en"
+
+# Enable CJK-aware word counting for Chinese, Japanese, and Korean text.
+hasCJKLanguage = true
+
+# Generate robots.txt automatically.
+enableRobotsTXT = true
+
+# Main content sections used by homepage lists and archives.
+mainSections = ["posts"]
+
+# Footer copyright text shown after the current year.
+copyright = "MIT licensed demo content"
+
+# Talks JSON feed media type.
+[mediaTypes."application/feed+json"]
+  suffixes = ["json"]
+
+# RSS output for the talks page.
+[outputFormats.TalksRSS]
+  mediaType = "application/rss+xml"
+  baseName = "talks"
+  isPlainText = false
+  notAlternative = true
+
+# JSON output for the talks page.
+[outputFormats.TalksJSON]
+  mediaType = "application/feed+json"
+  baseName = "talks"
+  isPlainText = true
+  notAlternative = true
+
+# Posts per page.
+[pagination]
+  pagerSize = 8
+
+# RSS item count.
+[services.rss]
+  limit = 10
+
+# URL patterns.
+[permalinks]
+  posts = "/article/:slug/"
+  page = "/:slug/"
+
+# Taxonomies.
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# English language settings.
+[languages.en]
+  languageName = "English"
+  title = "Pocket Hugo"
+  weight = 1
+
+[languages.en.params.sidebar]
+  subtitle = "A cover-driven theme for long-term personal writing"
+
+# Chinese language settings.
+[languages.zh-cn]
+  languageName = "Chinese"
+  title = "Pocket Hugo"
+  weight = 2
+
+[languages.zh-cn.params.sidebar]
+  subtitle = "一款适合个人长期写作的图文式主题"
+
+
+# Theme options.
+[params]
+  featuredImageField = "image"
+  favicon = "/img/logo-default.webp"
+  appleTouchIcon = "/img/logo-default.webp"
+  # Summary length for homepage and list cards.
+  # Set to 0 to disable truncation and show the full summary instead.
+  summaryLength = 0
+  articleWords = true
+  backToTop = true
+  # Experimental: browser View Transitions API. Disabled by default because
+  # some browsers may still flash briefly during navigation.
+  viewTransitions = false
+
+  [params.extensions]
+    # Mermaid is disabled by default because it also loads extra JavaScript.
+    # To use it on one page, first turn it on here, then add `extensions = ["mermaid"]`
+    # to that page's front matter.
+    mermaid = true
+    # KaTeX is disabled by default because it also loads extra JavaScript.
+    # To use it on one page, first turn it on here, then add `extensions = ["katex"]`
+    # to that page's front matter.
+    katex = true
+
+  [params.search]
+    provider = "local"
+    fullText = false
+
+  [params.seo]
+    # Optional tagline used by title patterns.
+    tagline = "A cover-driven theme for long-term personal writing"
+    # Homepage meta description used by search engines and social previews.
+    homeDescription = "Pocket Hugo Theme is a multilingual, cover-driven Hugo theme for long-form writing, talks, links, and calm personal publishing."
+    # Maximum description length for SEO meta output.
+    descriptionLength = 180
+    # Separator string used by title patterns.
+    separator = " · "
+
+    [params.seo.title]
+      # Available placeholders:
+      # [site_name] [tagline] [separator]
+      # [post_title] [page_title] [group_title] [archive_title]
+      home = "[site_name]"
+      post = "[post_title][separator][site_name]"
+      page = "[page_title][separator][site_name]"
+      group = "[group_title][separator][site_name]"
+      archive = "[archive_title][separator][site_name]"
+
+  [params.projects.remoteDemo]
+    # Experimental example for Content Adapters.
+    # Disabled by default so the demo remains stable offline.
+    enabled = false
+    source = "github-issues"
+    url = "https://api.github.com/repos/gohugoio/hugo/issues?per_page=6&state=open"
+
+  [params.footer]
+    since = 2026
+
+  [params.dateFormat]
+    published = "2006-01-02"
+    lastUpdated = "2006-01-02"
+
+  [params.sidebar]
+    subtitle = "A cover-driven theme for long-term personal writing"
+
+    [params.sidebar.avatar]
+      enabled = true
+      local = true
+      src = "img/logo-default.webp"
+
+    [params.sidebar.qr]
+      enabled = false
+      # image = "img/your-qr.png"
+      # alt = "Scan me"
+      # width = 110
+      # height = 110
+
+  [params.article]
+    backlinks = true
+    backlinksLimit = 5
+    # Whether article lists render excerpts below titles.
+    showListSummary = true
+    # Whether generated gradient cards on homepage, taxonomy, archive, and other lists show the outer title.
+    listTitle = true
+    # Whether single article/page headers render .Description below the title.
+    showPageDescription = true
+    toc = true
+    readingTime = true
+
+  [params.images.cover]
+      # Whether homepage/list covers should use Hugo Fill cropping.
+      # Set to false to keep the original image instead of generating a cropped cover.
+      useFill = false
+      # Hugo Fill spec used for homepage and card covers.
+      cardFill = "640x300 Center q85"
+      # Hugo Fill spec used for taxonomy cards.
+      taxonomyFill = "640x300 Center q85"
+      # Variant used for og:image and twitter:image. Usually "card" or "single".
+      openGraphVariant = "card"
+      # Use a fallback cover when a post does not define one.
+      useDefault = true
+      # "image" uses default-cover, "gradient" renders a generated title card.
+      fallbackMode = "gradient"
+      # Whether social sharing should still fall back to default-cover when the page has no image.
+      openGraphUseDefault = true
+      # Local path or remote URL for the fallback cover image when fallbackMode = "image".
+      default = "/img/default-cover.webp"
+
+    [params.images.cover.titleFont]
+      # CSS font-family used by generated gradient title cards.
+      family = "\"fix-punct\", \"confuse-punct\", system-ui, -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+      # Optional typography tweaks for generated title cards.
+      weight = "900"
+      letterSpacing = "-0.03em"
+
+  [params.images.content]
+    # Enable or disable max-height control for inline article images.
+    enableMaxHeight = true
+    # Use one unified height on all breakpoints when enabled.
+    limitHeight = false
+    # Shared height used when limitHeight is true.
+    unifiedMaxHeight = "320px"
+    # Per-breakpoint image height thresholds.
+    mobileMaxHeight = "160px"
+    tabletMaxHeight = "250px"
+    desktopMaxHeight = "350px"
+    # Object-fit used for full-width inline images.
+    fullWidthFit = "cover"
+
+  [params.images.brightness]
+    # CSS brightness() value applied to images in light mode.
+    light = "1"
+    # CSS brightness() value applied to images in dark mode.
+    dark = "0.85"
+
+  [params.images.borders]
+    # Whether homepage/list and single-page cover images render with a light border.
+    cover = true
+    # Whether inline article images render with a light border.
+    content = true
+    # Whether generated gradient title cards render with a light border.
+    titleCards = true
+
+  [params.images.pipeline]
+    responsive = true
+    format = "webp"
+    quality = 85
+    coverWidths = [480, 720, 960, 1280]
+    contentWidths = [640, 960, 1400]
+
+  [params.languageSwitcher]
+    #  With two site languages, use a direct switch icon; with more than two, use a dropdown list.
+    headerSelectThreshold = 2
+
+  [params.comments]
+      # Enable comments globally. The example site keeps Twikoo on so the demo can show a real comment area.
+      enabled = true
+      # Supported providers: "giscus", "twikoo", or "custom".
+      provider = "twikoo"
+
+    [params.comments.giscus]
+      # repo = "owner/repo"
+      # repoId = "..."
+      # category = "Announcements"
+      # categoryId = "..."
+      mapping = "pathname"
+      strict = "0"
+      reactionsEnabled = "1"
+      emitMetadata = "0"
+      inputPosition = "top"
+      theme = "preferred_color_scheme"
+      # lang = "en"
+      # jsUrl = "https://giscus.app/client.js"
+
+    [params.comments.twikoo]
+      # The example site uses a demo service here. For your own site, apply for and replace this with your own Twikoo service URL.
+      envId = "https://twikoo.fosu.ccc"
+      # region = ""
+      lang = "en-US"
+      # This path is fixed to "theme" only for the shared demo comments.
+      # If you deploy your own site, you can usually remove it and let Twikoo use each page path automatically.
+      path = "theme"
+      # jsUrl = "https://cdn.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.min.js"
+
+  [params.colorScheme]
+    # Show the light/dark mode switch in the header.
+    toggle = true
+    # Use "auto" to follow the system, or force "light" / "dark".
+    default = "auto"
+    # Available presets:
+    # golden-summer-fields, soft-pastel-shades, black-gold-elegance,
+    # fresh-greens, light-steel, deep-sea-blue, morandi-mist, monochrome-core
+    preset = "black-gold-elegance"
+    # Show the palette preview picker in the header.
+    showPicker = true
+
+  [params.layout]
+    # double = 1320px wide list layout, single = 1080px wide list layout
+    listMode = "double"
+
+  [params.widgets]
+    homepage = [
+      { type = "search", params = { limit = 0 } },
+      { type = "archives", params = { limit = 3 } },
+      { type = "categories", params = { limit = 10 } },
+      { type = "tag-cloud", params = { limit = 20 } }
+    ]
+    static = [
+      { type = "search", params = { limit = 0 } },
+      { type = "archives", params = { limit = 3 } },
+      { type = "categories", params = { limit = 10 } },
+      { type = "tag-cloud", params = { limit = 20 } }
+    ]
+    page = [
+      { type = "toc" }
+    ]
+
+    [params.widgets.titleVisibility]
+      archives = false
+      backlinks = true
+      categories = false
+      related = true
+      search = false
+      tagCloud = true
+      toc = true
+
+  [[params.social]]
+  name = "GitHub"
+  url = "https://github.com/h2dcc/pocket-hugo-theme"
+  icon = "brand-github"
+
+  [[params.social]]
+  name = "Facebook"
+  url = "https://www.facebook.com/"
+  icon = "brand-facebook"
+
+  [[params.social]]
+  name = "Twitter"
+  url = "https://twitter.com/"
+  icon = "brand-twitter"
+
+  [[params.social]]
+  name = "RSS"
+  url = "/index.xml"
+  icon = "rss"
+
+[related]
+  includeNewer = true
+  threshold = 1
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 200
+
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+
+# Markdown rendering options.
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = true
+
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = false
+    tabWidth = 4

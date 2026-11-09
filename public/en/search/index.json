@@ -1,0 +1,90 @@
+[{
+        "title": "New Test Post",
+        "permalink": "/en/article/nuovo-post-di-test/",
+        "description": "Another test post for understanding how to use this nice Hugo theme.",
+        "slug": "nuovo-post-di-test",
+        "content": "",
+        "categories": ["Demo"],
+        "tags": ["Hugo","Cover Card","Theme"]
+    },{
+        "title": "Pocket Hugo: Browser-First Publishing for Hugo",
+        "permalink": "/en/article/pocket-hugo-project/",
+        "description": "Pocket Hugo is a browser-first publishing tool for Hugo, built for writing, image handling, and GitHub-based Markdown workflows across desktop, tablet, and phone.",
+        "slug": "pocket-hugo-project",
+        "content": "",
+        "categories": ["Writing"],
+        "tags": ["Pocket-Hugo","Workflow","Multilingual","Mobile"]
+    },{
+        "title": "Responsive Image Pipeline Demo",
+        "permalink": "/en/article/responsive-image-pipeline/",
+        "description": "A sample post for checking derived image sizes, inline rendering, and the built-in lightbox.",
+        "slug": "responsive-image-pipeline",
+        "content": "",
+        "categories": ["Images"],
+        "tags": ["Images","Pipeline","Lightbox"]
+    },{
+        "title": "Markdown Rendering Showcase",
+        "permalink": "/en/article/markdown-demo/",
+        "description": "A compact post for testing common Markdown elements in the English article layout.",
+        "slug": "markdown-demo",
+        "content": "",
+        "categories": ["Demo"],
+        "tags": ["English","Markdown Demo"]
+    },{
+        "title": "Shortcodes Demo",
+        "permalink": "/en/article/shortcodes-demo/",
+        "description": "A sample page that groups together several practical shortcodes for content-heavy Hugo sites.",
+        "slug": "shortcodes-demo",
+        "content": "",
+        "categories": ["Writing"],
+        "tags": ["Shortcodes","Content","Markdown"]
+    },{
+        "title": "i18n MultiLanguage Configuration Reference",
+        "permalink": "/en/article/i18n-multilanguage-config/",
+        "description": "A field-by-field guide to the i18n MultiLanguage Hugo configuration used by Pocket Hugo Theme.",
+        "slug": "i18n-multilanguage-config",
+        "content": "",
+        "categories": ["Config"],
+        "tags": ["I18n","Configuration","Theme"]
+    },{
+        "title": "Title Card Guide",
+        "permalink": "/en/article/title-card-guide/",
+        "description": "A practical guide for using fallback title cards in Pocket Hugo Theme, including front matter setup and all 16 presets.",
+        "slug": "title-card-guide",
+        "content": "",
+        "categories": ["Demo"],
+        "tags": ["Hugo","Cover Card","Theme"]
+    },{
+        "title": "Header Links Settings",
+        "permalink": "/en/article/header-links-settings/",
+        "description": "How to configure the main header links, social links, and header tools in Pocket Hugo Theme.",
+        "slug": "header-links-settings",
+        "content": "",
+        "categories": ["Config"],
+        "tags": ["Header","Navigation","Configuration"]
+    },{
+        "title": "Comments Demo",
+        "permalink": "/en/article/comments-demo/",
+        "description": "A sample post for checking the comments area.",
+        "slug": "comments-demo",
+        "content": "",
+        "categories": ["Demo"],
+        "tags": ["Comments"]
+    },{
+        "title": "Markdown Extensions Demo",
+        "permalink": "/en/article/markdown-extensions-demo/",
+        "description": "A focused demo for the optional Syntax, Mermaid, and KaTeX extensions in Pocket Hugo Theme.",
+        "slug": "markdown-extensions-demo",
+        "content": "",
+        "categories": ["Demo"],
+        "tags": ["Markdown","Mermaid","KaTeX","Syntax Highlighting"]
+    },{
+        "title": "I chose Hugo for this blog",
+        "permalink": "/en/article/choosing-hugo/",
+        "description": "“After using Jekyll, I switched to Hugo, and I'm really happy with it.”",
+        "slug": "choosing-hugo",
+        "content": "",
+        "categories": ["Blogging"],
+        "tags": ["Hugo","Note to Self"]
+    }]
+

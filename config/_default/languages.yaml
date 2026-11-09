@@ -1,0 +1,17 @@
+# Italian language settings.
+it:
+  label: "Italian"
+  title: "The Neetpiq Lab"
+  weight: 1
+  params:
+    sidebar:
+      subtitle: "Spazio per esperimenti nel mondo software, tra homelab, devops e progetti con dispositivi IoT."
+
+# English language settings.
+en:
+  label: "English"
+  title: "The Neetpiq Lab"
+  weight: 1
+  params:
+    sidebar:
+      subtitle: "Space for experiments in the software world, between homelabs, devops and small projects with IoT devices and a touch of 3D printing when needed to give shape to ideas."

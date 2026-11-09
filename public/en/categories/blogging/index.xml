@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Blogging - The Neetpiq Lab</title>
+    <link>http://localhost:1313/en/categories/blogging/</link>
+    <description>Blogging</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Nov 2026 16:44:54 &#43;0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/blogging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I chose Hugo for this blog</title>
+      <link>http://localhost:1313/en/article/choosing-hugo/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 &#43;0000</pubDate>
+      <guid>http://localhost:1313/en/article/choosing-hugo/</guid>
+      <description>“After using Jekyll, I switched to Hugo, and I&#39;m really happy with it.”</description>
+      <content:encoded><![CDATA[<p>For a while, I used <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>
+ for my blog, which is originally supported by default on <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+. It’s a solid <a href="https://jamstack.org/generators/" target="_blank" rel="noopener noreferrer">static site generator</a>
+, but it’s complicated to test locally on Windows unless you use <a href="https://github.com/BretFisher/jekyll-serve" target="_blank" rel="noopener noreferrer">Docker</a>
+.</p>
+<p>So I looked for something else and eventually settled on <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>
+, which is very user-friendly, written in <a href="https://go.dev/" target="_blank" rel="noopener noreferrer">Go</a>
+, supports pages and posts written in <a href="https://it.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener noreferrer">Markdown</a>
+, and is very fast at generating the site locally for testing before publishing.</p>
+<p>It has excellent <a href="https://gohugo.io/documentation/" target="_blank" rel="noopener noreferrer">support</a>
+ on its website and on <a href="https://stackoverflow.com/questions/tagged/hugo" target="_blank" rel="noopener noreferrer">Stack Overflow</a>
+, and offers numerous <a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreferrer">free themes</a>
+ to choose from if you’re unable or unwilling to create your own.</p>
+<p>GitHub Pages <a href="https://gohugo.io/host-and-deploy/host-on-github-pages/" target="_blank" rel="noopener noreferrer">supports publishing a site with Hugo</a>
+, so it’s very convenient to write blog posts locally, test the results locally, make any necessary corrections, and—once you’re satisfied—commit and push to the relevant repository, then see your blog updated online within a few minutes.</p>
+<p>ooOOoo</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
