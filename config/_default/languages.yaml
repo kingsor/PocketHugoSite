@@ -5,7 +5,7 @@ it:
   weight: 1
   params:
     sidebar:
-      subtitle: "Spazio per esperimenti nel mondo software, tra homelab, devops e progetti con dispositivi IoT."
+      subtitle: "Spazio per la sperimentazione nel mondo del software, tra homelab, DevOps e piccoli progetti con dispositivi IoT e un tocco di stampa 3D quando necessario per dare forma alle idee."
 
 # English language settings.
 en:
