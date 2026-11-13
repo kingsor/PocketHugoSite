@@ -14,7 +14,7 @@
     {{ if gt (len $translations) 0 }}
         <div class="translation-toggle translation-toggle--{{ $variant }}">
             {{ if eq $variant "header" }}
-                {{ if gt $totalLanguages $threshold }}
+                {{ if ge $totalLanguages $threshold }}
                     {{ $currentAbbr := upper (replaceRE "-.*$" "" $currentLanguageCode) }}
                     <details class="translation-toggle__menu">
                         <summary
