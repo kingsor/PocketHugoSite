@@ -9,8 +9,16 @@
     <description>Note to Self</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Nov 2026 16:44:54 &#43;0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 06:32:43 &#43;0000</lastBuildDate>
     <atom:link href="http://localhost:1313/en/tags/note-to-self/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to choose blog post topics</title>
+      <link>http://localhost:1313/en/article/scegliere-argomenti-post/</link>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 &#43;0000</pubDate>
+      <guid>http://localhost:1313/en/article/scegliere-argomenti-post/</guid>
+      <description>Tips on How to Choose Topics for Your Content</description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
     <item>
       <title>I chose Hugo for this blog</title>
       <link>http://localhost:1313/en/article/choosing-hugo/</link>

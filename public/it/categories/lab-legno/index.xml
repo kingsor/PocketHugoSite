@@ -4,12 +4,12 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Lab-Legno - The Neetpiq Lab</title>
+    <title>Lab Legno - The Neetpiq Lab</title>
     <link>http://localhost:1313/it/categories/lab-legno/</link>
-    <description>Lab-Legno</description>
+    <description>Lab Legno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Mon, 09 Nov 2026 18:30:59 &#43;0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 06:32:45 &#43;0000</lastBuildDate>
     <atom:link href="http://localhost:1313/it/categories/lab-legno/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mobiletto per Bambu Lab A1 mini</title>
@@ -22,13 +22,13 @@
 <h2 id="il-progetto">Il progetto</h2>
 <p>Sono partito da un progettino su carta, che per ora rimane il sistema più rapido per me per creazioni di questa entità. Poi sono andato al BricoFer che ho vicino a casa, ho acquistato due pannelli di trucciolare rivestito da 40x100cm e li ho fatti tagliare in modo che una volta montato la bordatura fosse visibile.</p>
 <p><figure class="article-image">
-    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto.jpg" data-lightbox-image>
+    <a class="article-image__link" href="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto.jpg" data-lightbox-image>
         <img
-            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto_hu_7734c667a9fc32b6.webp"
+            src="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto_hu_7734c667a9fc32b6.webp"
             alt="Progetto del mobiletto"
             loading="lazy"
             decoding="async"
-            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto_hu_7734c667a9fc32b6.webp 640w"
+            srcset="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-progetto_hu_7734c667a9fc32b6.webp 640w"
             sizes="100vw"
             width="747"
             height="1146"
@@ -41,13 +41,13 @@
 <h2 id="in-construzione">In construzione</h2>
 <p>Con i pezzi tagliati di misura ho iniziato il montaggio. Ho utilizzato dei morsetti ad angolo e un morsetto a sgancio rapido per tenere fermi i fianchetti del mobiletto.</p>
 <p><figure class="article-image">
-    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05.jpg" data-lightbox-image>
+    <a class="article-image__link" href="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05.jpg" data-lightbox-image>
         <img
-            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_27e3ba69d39df1e8.webp"
+            src="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_27e3ba69d39df1e8.webp"
             alt="Mobiletto in costruzione"
             loading="lazy"
             decoding="async"
-            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_63fc31968ceea299.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_27e3ba69d39df1e8.webp 960w"
+            srcset="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_63fc31968ceea299.webp 640w, /it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-05_hu_27e3ba69d39df1e8.webp 960w"
             sizes="100vw"
             width="1382"
             height="1843"
@@ -58,13 +58,13 @@
 </figure>
 </p>
 <p><figure class="article-image">
-    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06.jpg" data-lightbox-image>
+    <a class="article-image__link" href="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06.jpg" data-lightbox-image>
         <img
-            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_cfd223b6b3a1ae8d.webp"
+            src="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_cfd223b6b3a1ae8d.webp"
             alt="Particolare del morsetto"
             loading="lazy"
             decoding="async"
-            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_f8fe203ce592e71c.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_cfd223b6b3a1ae8d.webp 960w"
+            srcset="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_f8fe203ce592e71c.webp 640w, /it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-costruzione-06_hu_cfd223b6b3a1ae8d.webp 960w"
             sizes="100vw"
             width="1382"
             height="1843"
@@ -77,13 +77,13 @@
 <p>E infine ho montato il pezzo che mi era rimasto, anche se più corto dei pezzi alla base e alla sommità, per avere un ripiano nella parte centrale del mobiletto.</p>
 <h2 id="completato">Completato</h2>
 <p><figure class="article-image">
-    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02.jpg" data-lightbox-image>
+    <a class="article-image__link" href="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02.jpg" data-lightbox-image>
         <img
-            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_5857488f50698ac8.webp"
+            src="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_5857488f50698ac8.webp"
             alt="Mobiletto completato"
             loading="lazy"
             decoding="async"
-            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_c4a88f9f87589853.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_5857488f50698ac8.webp 960w"
+            srcset="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_c4a88f9f87589853.webp 640w, /it/article/bambu-lab-a1-mini-cabinet/Mobiletto-completato-02_hu_5857488f50698ac8.webp 960w"
             sizes="100vw"
             width="1382"
             height="1843"
@@ -95,13 +95,13 @@
 </p>
 <p>Finalmente la mia Bambulab A1 Mini ha il suo mobiletto con le rotelle per poterla portare in giro per casa.</p>
 <p><figure class="article-image">
-    <a class="article-image__link" href="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera.jpg" data-lightbox-image>
+    <a class="article-image__link" href="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera.jpg" data-lightbox-image>
         <img
-            src="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_48cedb0dc81717d2.webp"
+            src="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_48cedb0dc81717d2.webp"
             alt="Mobiletto in opera"
             loading="lazy"
             decoding="async"
-            srcset="/en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_3bd9f11c1a52eda7.webp 640w, /en/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_48cedb0dc81717d2.webp 960w"
+            srcset="/it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_3bd9f11c1a52eda7.webp 640w, /it/article/bambu-lab-a1-mini-cabinet/Mobiletto-in-opera_hu_48cedb0dc81717d2.webp 960w"
             sizes="100vw"
             width="1382"
             height="1843"

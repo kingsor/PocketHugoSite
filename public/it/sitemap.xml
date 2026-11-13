@@ -2,8 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/it/categories/3d-print/</loc>
+    <lastmod>2026-09-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/3d-print/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://localhost:1313/it/categories/3d-print/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/it/tags/bambulab-a1-mini/</loc>
+    <lastmod>2026-09-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/bambulab-a1-mini/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://localhost:1313/it/tags/bambulab-a1-mini/"
+                />
+  </url><url>
     <loc>http://localhost:1313/it/categories/</loc>
-    <lastmod>2026-10-22T08:30:00+08:00</lastmod>
+    <lastmod>2026-09-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,60 +41,34 @@
                 href="http://localhost:1313/it/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/it/tags/cover-card/</loc>
-    <lastmod>2026-10-22T08:30:00+08:00</lastmod>
+    <loc>http://localhost:1313/it/categories/lab-legno/</loc>
+    <lastmod>2026-09-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/cover-card/"
+                href="http://localhost:1313/en/categories/lab-legno/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:1313/it/tags/cover-card/"
+                href="http://localhost:1313/it/categories/lab-legno/"
                 />
   </url><url>
-    <loc>http://localhost:1313/it/categories/demo/</loc>
-    <lastmod>2026-10-22T08:30:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://localhost:1313/it/categories/demo/"
-                />
+    <loc>http://localhost:1313/it/article/bambu-lab-a1-mini-cabinet/</loc>
+    <lastmod>2026-09-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/demo/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/it/tags/hugo/</loc>
-    <lastmod>2026-10-22T08:30:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/hugo/"
+                href="http://localhost:1313/en/article/bambu-lab-a1-mini-cabinet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:1313/it/tags/hugo/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/it/article/nuovo-post-di-test/</loc>
-    <lastmod>2026-10-22T08:30:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/article/nuovo-post-di-test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://localhost:1313/it/article/nuovo-post-di-test/"
+                href="http://localhost:1313/it/article/bambu-lab-a1-mini-cabinet/"
                 />
   </url><url>
     <loc>http://localhost:1313/it/posts/</loc>
-    <lastmod>2026-10-22T08:30:00+08:00</lastmod>
+    <lastmod>2026-09-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -81,7 +81,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/it/tags/</loc>
-    <lastmod>2026-10-22T08:30:00+08:00</lastmod>
+    <lastmod>2026-09-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -94,7 +94,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/it/</loc>
-    <lastmod>2026-10-22T08:30:00+08:00</lastmod>
+    <lastmod>2026-09-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -106,27 +106,44 @@
                 href="http://localhost:1313/it/"
                 />
   </url><url>
-    <loc>http://localhost:1313/it/tags/theme/</loc>
-    <lastmod>2026-10-22T08:30:00+08:00</lastmod>
+    <loc>http://localhost:1313/it/categories/blogging/</loc>
+    <lastmod>2026-07-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/theme/"
+                href="http://localhost:1313/en/categories/blogging/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:1313/it/tags/theme/"
+                href="http://localhost:1313/it/categories/blogging/"
                 />
   </url><url>
     <loc>http://localhost:1313/it/article/scegliere-argomenti-post/</loc>
     <lastmod>2026-07-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://localhost:1313/it/article/scegliere-argomenti-post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/article/scegliere-argomenti-post/"
+                />
   </url><url>
     <loc>http://localhost:1313/it/tags/content-creation/</loc>
     <lastmod>2026-07-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/it/categories/management/</loc>
-    <lastmod>2026-07-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://localhost:1313/it/tags/content-creation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/content-creation/"
+                />
   </url><url>
     <loc>http://localhost:1313/it/tags/note-to-self/</loc>
     <lastmod>2026-07-25T00:00:00+00:00</lastmod>
@@ -141,18 +158,53 @@
                 href="http://localhost:1313/en/tags/note-to-self/"
                 />
   </url><url>
+    <loc>http://localhost:1313/it/tags/mobile/</loc>
+    <lastmod>2026-03-23T15:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/multilingual/</loc>
+    <lastmod>2026-03-23T15:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/article/pocket-hugo-project/</loc>
+    <lastmod>2026-03-23T15:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/pocket-hugo/</loc>
+    <lastmod>2026-03-23T15:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/workflow/</loc>
+    <lastmod>2026-03-23T15:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/categories/writing/</loc>
+    <lastmod>2026-03-23T15:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/categories/images/</loc>
+    <lastmod>2026-03-21T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/images/</loc>
+    <lastmod>2026-03-21T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/lightbox/</loc>
+    <lastmod>2026-03-21T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/pipeline/</loc>
+    <lastmod>2026-03-21T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/article/responsive-image-pipeline/</loc>
+    <lastmod>2026-03-21T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/categories/demo/</loc>
+    <lastmod>2026-03-19T09:15:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/english/</loc>
+    <lastmod>2026-03-19T09:15:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/markdown-demo/</loc>
+    <lastmod>2026-03-19T09:15:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/article/markdown-demo/</loc>
+    <lastmod>2026-03-19T09:15:00+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/it/archives/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://localhost:1313/it/archives/"
-                />
   </url><url>
     <loc>http://localhost:1313/it/page/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
@@ -167,18 +219,78 @@
                 href="http://localhost:1313/en/page/"
                 />
   </url><url>
-    <loc>http://localhost:1313/it/categories/blogging/</loc>
-    <lastmod>2025-08-13T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/it/tags/content/</loc>
+    <lastmod>2026-03-06T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/markdown/</loc>
+    <lastmod>2026-03-06T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/shortcodes/</loc>
+    <lastmod>2026-03-06T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/article/shortcodes-demo/</loc>
+    <lastmod>2026-03-06T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/categories/config/</loc>
+    <lastmod>2026-03-05T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/configuration/</loc>
+    <lastmod>2026-03-05T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/i18n/</loc>
+    <lastmod>2026-03-05T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/article/i18n-multilanguage-config/</loc>
+    <lastmod>2026-03-05T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/theme/</loc>
+    <lastmod>2026-03-05T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/cover-card/</loc>
+    <lastmod>2026-02-09T08:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/hugo/</loc>
+    <lastmod>2026-02-09T08:30:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:1313/it/categories/blogging/"
+                href="http://localhost:1313/it/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/blogging/"
+                href="http://localhost:1313/en/tags/hugo/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/it/article/title-card-guide/</loc>
+    <lastmod>2026-02-09T08:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/header/</loc>
+    <lastmod>2026-02-05T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/article/header-links-settings/</loc>
+    <lastmod>2026-02-05T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/navigation/</loc>
+    <lastmod>2026-02-05T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/comments/</loc>
+    <lastmod>2026-02-03T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/article/comments-demo/</loc>
+    <lastmod>2026-02-03T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/katex/</loc>
+    <lastmod>2026-02-01T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/article/markdown-extensions-demo/</loc>
+    <lastmod>2026-02-01T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/mermaid/</loc>
+    <lastmod>2026-02-01T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/it/tags/syntax-highlighting/</loc>
+    <lastmod>2026-02-01T09:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/it/article/choosing-hugo/</loc>
     <lastmod>2025-08-13T00:00:00+00:00</lastmod>
@@ -205,40 +317,26 @@
                 href="http://localhost:1313/it/about/"
                 />
   </url><url>
+    <loc>http://localhost:1313/it/tags/chinese/</loc>
+  </url><url>
+    <loc>http://localhost:1313/it/guide/</loc>
+  </url><url>
     <loc>http://localhost:1313/it/links/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://localhost:1313/it/links/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/links/"
-                />
   </url><url>
     <loc>http://localhost:1313/it/talks/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://localhost:1313/it/talks/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/talks/"
-                />
   </url><url>
     <loc>http://localhost:1313/it/search/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://localhost:1313/it/search/"
-                />
+  </url><url>
+    <loc>http://localhost:1313/it/resources/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/search/"
+                href="http://localhost:1313/en/resources/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://localhost:1313/it/resources/"
                 />
   </url>
 </urlset>

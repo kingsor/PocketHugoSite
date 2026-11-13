@@ -9,7 +9,7 @@
     <description>Pages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Mon, 09 Nov 2026 17:49:13 &#43;0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 06:32:46 &#43;0000</lastBuildDate>
     <atom:link href="http://localhost:1313/it/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Archivio</title>
@@ -28,9 +28,9 @@
       <content:encoded><![CDATA[<p>Il sogno dietro a questo sito è quello di raggruppare persone con interessi simili ai miei. Ma per ora ci sono solo io 😄</p>
 <h2 id="edoardo-inamo">Edoardo Inamo</h2>
 <p><figure class="article-image">
-    <a class="article-image__link" href="/en/about/edo-profile.jpg" data-lightbox-image>
+    <a class="article-image__link" href="/it/about/edo-profile.jpg" data-lightbox-image>
         <img
-            src="/en/about/edo-profile.jpg"
+            src="/it/about/edo-profile.jpg"
             alt="Edo’s photo"
             loading="lazy"
             decoding="async"
@@ -136,7 +136,7 @@ HugoThe world&amp;#39;s fastest static site generator.Use Pocket HugoOpen the
         <a class="friend-card" href="https://leftn.com" target="_blank" rel="noopener noreferrer">
                 
                     <div class="friend-card__media">
-                        <img src="/en/links/pocket-hugo-logo.webp" alt="Links">
+                        <img src="/it/links/pocket-hugo-logo.webp" alt="Links">
                     </div>
                 
                 <div class="friend-card__body">
@@ -147,7 +147,7 @@ HugoThe world&amp;#39;s fastest static site generator.Use Pocket HugoOpen the
         <a class="friend-card" href="https://theme.leftn.com" target="_blank" rel="noopener noreferrer">
                 
                     <div class="friend-card__media">
-                        <img src="/en/links/pocket-hugo-theme-logo.webp" alt="Links">
+                        <img src="/it/links/pocket-hugo-theme-logo.webp" alt="Links">
                     </div>
                 
                 <div class="friend-card__body">
