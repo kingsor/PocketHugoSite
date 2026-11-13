@@ -2,7 +2,7 @@
 baseURL: "https://example.org/"
 
 # Site title shown in the header, browser title, and feeds.
-title: "Pocket Hugo"
+title: "The Neetpiq Lab"
 
 # Theme folder name.
 theme: "pocket-hugo-theme"
@@ -12,14 +12,14 @@ theme: "pocket-hugo-theme"
 # standard BCP 47 value such as `en`, `en-US`, `zh-CN`, `zh-Hans`, `zh-TW`,
 # `fr`, `es`, `ja`, `de`, `pt`, `ko`, `ru`, or `it`. Avoid non-standard values
 # like `cn`.
-locale: "en"
+locale: "it"
 
 # `defaultContentLanguage` is the Hugo language key that chooses which
 # language block (see languages.yaml) and which `index.xx.md` files are treated
 # as the default. This value should match a language key defined in
 # languages.yaml, such as `en`, `zh-cn`, `zh-tw`, `fr`, `es`, `ja`, `de`, `pt`,
 # `ko`, `ru`, or `it`. The theme ships UI i18n files for all of these.
-defaultContentLanguage: "en"
+defaultContentLanguage: "it"
 defaultContentLanguageInSubdir: true
 
 # Enable CJK-aware word counting for Chinese, Japanese, and Korean text.

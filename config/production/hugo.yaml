@@ -1,0 +1,6 @@
+######################## production configuration ####################
+# The base URL of your site (required). This will be prepended to all relative URLs.
+baseURL: 'https://neetpiq.com/'
+enableRobotsTXT: true
+build:
+  writeStats: true
