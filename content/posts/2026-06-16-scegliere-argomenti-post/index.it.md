@@ -4,7 +4,7 @@ description: "Consigli su come scegliere gli argomenti per i propri contenuti"
 date: 2026-07-25
 slug: "scegliere-argomenti-post"
 comments: false
-coverCard: "G"
+coverCard: "g"
 categories:
   - Blogging
 tags:

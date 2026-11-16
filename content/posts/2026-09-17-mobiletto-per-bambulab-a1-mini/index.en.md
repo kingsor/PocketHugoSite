@@ -4,7 +4,7 @@ description: "After setting up my new Bambu Lab A1 mini, I built a wooden cabine
 date: 2026-09-17
 slug: "bambu-lab-a1-mini-cabinet"
 comments: false
-coverCard: "C"
+coverCard: "c"
 categories:
 - 3D Print
 - Lab Legno

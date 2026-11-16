@@ -4,7 +4,7 @@ description: "Dopo aver utilizzato Jekyll sono passato a Hugo e mi trovo molto b
 date: 2025-08-13
 slug: "choosing-hugo"
 comments: false
-coverCard: "G"
+coverCard: "g"
 categories:
   - Blogging
 tags:
