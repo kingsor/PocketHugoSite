@@ -1,7 +1,7 @@
 ---
 title: "Modello di post"
 description: "Il modello per un post"
-date: 2026-11-18
+date: 2025-11-18
 slug: "template-post"
 comments: false
 coverCard: "G"
