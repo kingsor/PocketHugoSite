@@ -4,7 +4,7 @@ description: "Dopo aver messo in servizio la mia nuova Bambu Lab A1 mini, le ho 
 date: 2026-09-17
 slug: "bambu-lab-a1-mini-cabinet"
 comments: false
-coverCard: "c"
+coverCard: "A"
 categories:
 - 3D Print
 - Lab Legno

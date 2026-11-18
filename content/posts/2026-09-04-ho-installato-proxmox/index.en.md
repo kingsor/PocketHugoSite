@@ -4,7 +4,7 @@ description: "I finally installed Proxmox VE 9.2 on my ThinkCentre M900 Tiny. In
 date: 2026-09-04
 slug: "proxmox-installation"
 comments: false
-coverCard: "c"
+coverCard: "B"
 categories:
 - Homelab
 tags:

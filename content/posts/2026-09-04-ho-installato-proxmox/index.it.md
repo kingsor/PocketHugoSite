@@ -4,7 +4,7 @@ description: "Ho finalmente installato Proxmox VE 9.2 sul mio ThinkCentre M900 T
 date: 2026-09-04
 slug: "proxmox-installation"
 comments: false
-coverCard: "c"
+coverCard: "B"
 categories:
 - Homelab
 tags:
